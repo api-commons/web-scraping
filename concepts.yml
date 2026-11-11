@@ -1,0 +1,42 @@
+context: web-scraping
+name: Web Scraping and Crawling
+intro: >-
+  The common scraping vocabulary -- a scrape of one URL, a crawl across a site, and the content they
+  return -- distilled from the APIs that already exist.
+tags: [Web Scraping, Web Crawling, Data Extraction, Browser Automation, Headless Browser, Proxies]
+
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results,
+           value, next, previous, has_more, message, page_info, cursor, total_count, per_page, total_pages, object]
+
+common_fields:
+  id: [uuid, guid, external_id, job_id, crawl_id, task_id, run_id, scrape_id, session_id]
+  created_at: [created, created_date, create_time, started_at]
+  updated_at: [updated, modified_at, finished_at, completed_at]
+  status: [state]
+
+concepts:
+  scrape:
+    segments: [scrape, scrapes, extract, fetch, render, screenshot, content, markdown, html]
+    aliases:
+      url: [target_url, page_url, uri]
+      render_js: [js_render, javascript, render, render_javascript, js]
+      country: [proxy_country, geo, country_code, geolocation]
+      formats: [format, output_format, output]
+      content: [html, markdown, text, body, data]
+  crawl:
+    segments: [crawl, crawls, crawler, crawlers, map, sitemap]
+    aliases:
+      url: [start_url, seed_url, root_url]
+      limit: [max_pages, page_limit, max_depth]
+  # browser_session was measured and dropped: 5 readable providers.
+
+findings:
+  - >-
+    A scrape is a request, not a resource: 44 readable providers agree on the url; formats reaches
+    41% -- the scraper's output choice (html, markdown, json, screenshot). Rendering, proxy country and
+    wait options are each spelled several ways.
+  - >-
+    Crawls agree on url and limit, with status at 47%: a crawl is an asynchronous job bounded by a page limit.
+decisions:
+  - >-
+    formats is the canonical name for the output choice, and render_js for JavaScript rendering.

@@ -1,0 +1,14 @@
+provider: structify
+apis_io: https://apis.io/providers/structify/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - scrape
+    properties:
+      url: url
+      id: job_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/structify-openapi-original.json#POST /scrape

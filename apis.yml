@@ -1,0 +1,48 @@
+aid: common-web-scraping
+name: Web Scraping and Crawling
+type: Common
+description: 'The common Web Scraping and Crawling vocabulary, distilled from the harvested OpenAPI of 109 providers
+  in APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common
+  names to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Web Scraping
+- Web Crawling
+- Data Extraction
+- Browser Automation
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/web-scraping/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-web-scraping:web-scraping
+  name: Common Web Scraping and Crawling Interface
+  description: The Web Scraping and Crawling interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/web-scraping
+  tags:
+  - Web Scraping
+  - Web Crawling
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/web-scraping/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/web-scraping/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/web-scraping/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: scrape
+    url: https://raw.githubusercontent.com/api-commons/web-scraping/main/schema/scrape.json
+  - type: JSONSchema
+    name: crawl
+    url: https://raw.githubusercontent.com/api-commons/web-scraping/main/schema/crawl.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/web-scraping/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

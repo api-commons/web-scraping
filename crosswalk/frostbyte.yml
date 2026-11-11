@@ -1,0 +1,18 @@
+provider: frostbyte
+apis_io: https://apis.io/providers/frostbyte/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - screenshot
+    - scrape
+    - extract
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/agent-scraper/api/scrape
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/agent-screenshot/api/screenshot
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/agent-scraper/api/extract
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/agent-scraper/api/scrape
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/agent-screenshot/api/screenshot

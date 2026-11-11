@@ -1,0 +1,16 @@
+provider: getemboss-ai
+apis_io: https://apis.io/providers/getemboss-ai/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - content
+    - render
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/getemboss-ai-account-openapi.json#GET /artifacts/{artifact_id}/content
+    - openapi/_original/getemboss-ai-account-openapi.json#POST /admin/forms/with-context/{job_id}/render
+    - openapi/_original/getemboss-ai-account-openapi.yml#GET /artifacts/{artifact_id}/content
+    - openapi/_original/getemboss-ai-account-openapi.yml#POST /admin/forms/with-context/{job_id}/render

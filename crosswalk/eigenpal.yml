@@ -1,0 +1,14 @@
+provider: eigenpal
+apis_io: https://apis.io/providers/eigenpal/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - content
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/eigenpal-openapi.json#GET /v1/files/{id}/content
+    - openapi/_original/eigenpal-openapi.json#GET /v1/human-reviews/{taskId}/files/{fileId}/content
+    - openapi/_original/eigenpal-openapi.json#GET /v1/templates/{id}/content

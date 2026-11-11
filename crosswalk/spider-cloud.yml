@@ -1,0 +1,30 @@
+provider: spider-cloud
+apis_io: https://apis.io/providers/spider-cloud/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - scrape
+    - screenshot
+    properties:
+      url: url
+      formats: format
+      status: status
+      full_page: full_page
+      metadata: metadata
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/spider-cloud-openapi.yml#POST /scrape
+    - openapi/_original/spider-cloud-openapi.yml#POST /screenshot
+  crawl:
+    path_segment:
+    - crawl
+    properties:
+      url: url
+      limit: limit
+      status: status
+      metadata: metadata
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/spider-cloud-openapi.yml#POST /crawl

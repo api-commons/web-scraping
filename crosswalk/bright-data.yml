@@ -1,0 +1,12 @@
+provider: bright-data
+apis_io: https://apis.io/providers/bright-data/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - scrape
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bright-data-web-scraper-api-openapi.yml#POST /datasets/v3/scrape

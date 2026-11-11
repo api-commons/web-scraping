@@ -1,0 +1,33 @@
+provider: socialcrawl
+apis_io: https://apis.io/providers/socialcrawl/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - extract
+    - scrape
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/socialcrawl-openapi-slim.json#GET /tavily/extract
+    - openapi/_original/socialcrawl-openapi-slim.json#GET /web/extract
+    - openapi/_original/socialcrawl-openapi-slim.json#GET /web/scrape
+  crawl:
+    path_segment:
+    - map
+    - crawl
+    properties:
+      url: url
+      limit:
+      - limit
+      - max_depth
+      allow_external_links: allow_external_links
+      exclude_paths: exclude_paths
+      include_paths: include_paths
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/socialcrawl-openapi-slim.json#GET /tavily/crawl
+    - openapi/_original/socialcrawl-openapi-slim.json#GET /tavily/map
+    - openapi/_original/socialcrawl-openapi-slim.json#GET /web/map
+    - openapi/_original/socialcrawl-openapi-slim.json#POST /web/crawl

@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/web-scraping/main/schema/crawl.json",
+  "title": "Crawl",
+  "description": "The common crawl in Web Scraping and Crawling, distilled from 15 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.933,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "url"
+      ]
+    },
+    "limit": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.733,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "limit",
+        "max_depth",
+        "maxDepth",
+        "maxPages",
+        "max_pages"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.467,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "status"
+      ]
+    },
+    "allow_external_links": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "allowExternalLinks",
+        "allow_external_links"
+      ]
+    },
+    "exclude_paths": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "excludePaths",
+        "exclude_paths"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "id",
+        "jobId",
+        "crawl_id"
+      ]
+    },
+    "include_paths": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "includePaths",
+        "include_paths"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "metadata"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "title"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "allow_subdomains": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "allowSubdomains",
+        "allow_subdomains"
+      ]
+    },
+    "completed": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "completed"
+      ]
+    },
+    "error": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "error"
+      ]
+    },
+    "ignore_query_parameters": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "ignoreQueryParameters",
+        "ignore_query_parameters"
+      ]
+    },
+    "include_subdomains": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "includeSubdomains",
+        "include_subdomains"
+      ]
+    },
+    "markdown": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "markdown"
+      ]
+    },
+    "scrape_options": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "scrapeOptions"
+      ]
+    },
+    "search": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "search"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "web-scraping",
+    "concept": "crawl",
+    "providers": 15,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

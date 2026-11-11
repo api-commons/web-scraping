@@ -1,0 +1,12 @@
+provider: webscraping-ai
+apis_io: https://apis.io/providers/webscraping-ai/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - html
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/webscraping-ai-openapi.yml#GET /html

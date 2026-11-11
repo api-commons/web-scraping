@@ -1,0 +1,33 @@
+provider: mercury-hq-com
+apis_io: https://apis.io/providers/mercury-hq-com/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - fetch
+    - extract
+    - markdown
+    properties:
+      url: url
+      formats: format
+      status: status
+      schema: schema
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/extract
+    - openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/fetch
+    - openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/markdown
+    - openapi/_original/mercury-hq-com-x402-storefront-openapi.yml#GET /buy/extract
+    - openapi/_original/mercury-hq-com-x402-storefront-openapi.yml#GET /buy/fetch
+  crawl:
+    path_segment:
+    - sitemap
+    properties:
+      url: url
+      status: status
+      error: error
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/sitemap
+    - openapi/_original/mercury-hq-com-x402-storefront-openapi.yml#GET /buy/sitemap

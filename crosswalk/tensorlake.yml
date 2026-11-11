@@ -1,0 +1,13 @@
+provider: tensorlake
+apis_io: https://apis.io/providers/tensorlake/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - extract
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tensorlake-openapi.yml#POST /documents/v2/extract

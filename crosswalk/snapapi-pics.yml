@@ -1,0 +1,25 @@
+provider: snapapi-pics
+apis_io: https://apis.io/providers/snapapi-pics/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - screenshot
+    - extract
+    - scrape
+    properties:
+      url: url
+      formats: format
+      full_page: fullPage
+      height: height
+      metadata: metadata
+      width: width
+      selector: selector
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/snapapi-pics-openapi.json#GET /v1/extract
+    - openapi/_original/snapapi-pics-openapi.json#GET /v1/scrape
+    - openapi/_original/snapapi-pics-openapi.json#GET /v1/screenshot
+    - openapi/_original/snapapi-pics-openapi.json#POST /v1/extract
+    - openapi/_original/snapapi-pics-openapi.json#POST /v1/scrape

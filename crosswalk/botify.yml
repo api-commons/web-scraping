@@ -1,0 +1,12 @@
+provider: botify
+apis_io: https://apis.io/providers/botify/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - html
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/botify-api-swagger.json#GET /analyses/{username}/{project_slug}/{analysis_slug}/urls/html/{url}

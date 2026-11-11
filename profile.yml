@@ -1,0 +1,382 @@
+context: web-scraping
+name: Web Scraping and Crawling
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Web Scraping
+  - Web Crawling
+  - Data Extraction
+  - Browser Automation
+  - Headless Browser
+  - Proxies
+  providers_with_harvested_openapi: 109
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  scrape:
+    segments_seen:
+      extract: 23
+      screenshot: 22
+      scrape: 17
+      fetch: 6
+      html: 5
+      content: 4
+      markdown: 4
+      render: 2
+    providers_exposing: 49
+    providers_with_readable_schema: 44
+    operations:
+    - operation: POST collection
+      providers: 41
+      share: 0.837
+      tier: core
+    - operation: GET collection
+      providers: 17
+      share: 0.347
+      tier: extended
+    - operation: GET item
+      providers: 4
+      share: 0.082
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.02
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.02
+      tier: long-tail
+    properties:
+    - name: url
+      tier: core
+      providers: 29
+      share: 0.659
+      type: string
+      spellings:
+      - url
+    - name: formats
+      tier: extended
+      providers: 18
+      share: 0.409
+      type: string
+      spellings:
+      - format
+      - formats
+      - output
+      - output_format
+    - name: status
+      tier: extended
+      providers: 12
+      share: 0.273
+      type: string
+      spellings:
+      - status
+      - state
+    - name: full_page
+      tier: extended
+      providers: 11
+      share: 0.25
+      type: boolean
+      spellings:
+      - fullPage
+      - full_page
+    - name: height
+      tier: extended
+      providers: 11
+      share: 0.25
+      type: integer
+      spellings:
+      - height
+    - name: metadata
+      tier: extended
+      providers: 11
+      share: 0.25
+      type: object
+      spellings:
+      - metadata
+    - name: width
+      tier: extended
+      providers: 11
+      share: 0.25
+      type: integer
+      spellings:
+      - width
+    - name: schema
+      tier: extended
+      providers: 10
+      share: 0.227
+      type: object
+      spellings:
+      - schema
+    - name: selector
+      tier: extended
+      providers: 10
+      share: 0.227
+      type: string
+      spellings:
+      - selector
+    - name: id
+      tier: extended
+      providers: 9
+      share: 0.205
+      type: string
+      spellings:
+      - id
+      - jobId
+      - job_id
+      - task_id
+    long_tail_count: 516
+    long_tail_sample:
+    - country
+    - block_ads
+    - device
+    - content
+    - cookies
+    - delay
+    - error
+    - headers
+    - instructions
+    - prompt
+    - proxy
+    - quality
+    - render_js
+    - status_code
+    - timeout
+    - type
+    - user_agent
+    - wait_for_selector
+    - wait_until
+    - actions
+    - content_type
+    - created_at
+    - input
+    - lang
+    - locale
+    - ok
+    - request_id
+    - title
+    - urls
+    - viewport
+    - wait_for
+    - cache
+    - cache_ttl
+    - color_scheme
+    - images
+    - json
+    - only_main_content
+    - tags
+    - timezone
+    - warnings
+  crawl:
+    segments_seen:
+      crawl: 14
+      map: 5
+      sitemap: 3
+      crawlers: 1
+    providers_exposing: 15
+    providers_with_readable_schema: 15
+    operations:
+    - operation: POST collection
+      providers: 13
+      share: 0.867
+      tier: core
+    - operation: GET collection
+      providers: 6
+      share: 0.4
+      tier: extended
+    - operation: GET item
+      providers: 3
+      share: 0.2
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.133
+      tier: long-tail
+    properties:
+    - name: url
+      tier: core
+      providers: 14
+      share: 0.933
+      type: string
+      spellings:
+      - url
+    - name: limit
+      tier: core
+      providers: 11
+      share: 0.733
+      type: integer
+      spellings:
+      - limit
+      - max_depth
+      - maxDepth
+      - maxPages
+      - max_pages
+    - name: status
+      tier: extended
+      providers: 7
+      share: 0.467
+      type: string
+      spellings:
+      - status
+    - name: allow_external_links
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: boolean
+      spellings:
+      - allowExternalLinks
+      - allow_external_links
+    - name: exclude_paths
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: array
+      spellings:
+      - excludePaths
+      - exclude_paths
+    - name: id
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: string
+      spellings:
+      - id
+      - jobId
+      - crawl_id
+    - name: include_paths
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: array
+      spellings:
+      - includePaths
+      - include_paths
+    - name: metadata
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: object
+      spellings:
+      - metadata
+    - name: title
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: string
+      spellings:
+      - title
+    - name: type
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: string
+      spellings:
+      - type
+    - name: allow_subdomains
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: boolean
+      spellings:
+      - allowSubdomains
+      - allow_subdomains
+    - name: completed
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: integer
+      spellings:
+      - completed
+    - name: error
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - error
+    - name: ignore_query_parameters
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: boolean
+      spellings:
+      - ignoreQueryParameters
+      - ignore_query_parameters
+    - name: include_subdomains
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: boolean
+      spellings:
+      - includeSubdomains
+      - include_subdomains
+    - name: markdown
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - markdown
+    - name: scrape_options
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: object
+      spellings:
+      - scrapeOptions
+    - name: search
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - search
+    long_tail_count: 156
+    long_tail_sample:
+    - content
+    - country
+    - crawl_entire_domain
+    - crawl_options
+    - created_at
+    - credits_used
+    - delay
+    - depth
+    - description
+    - exclude_patterns
+    - formats
+    - include_patterns
+    - location
+    - max_discovery_depth
+    - name
+    - ok
+    - path
+    - respect_robots_txt
+    - same_domain_only
+    - stealth
+    - timeout
+    - updated_at
+    - webhook
+    - webhook_url
+    - account_name
+    - allow_backward_links
+    - api_url
+    - batch_size
+    - blacklist_regexp
+    - bots
+    - browser
+    - cache
+    - cached
+    - callback
+    - chrome
+    - content_type
+    - crawl_delay
+    - credits_remaining
+    - current_page_batch
+    - current_time

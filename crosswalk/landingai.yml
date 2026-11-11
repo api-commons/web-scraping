@@ -1,0 +1,16 @@
+provider: landingai
+apis_io: https://apis.io/providers/landingai/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - extract
+    properties:
+      metadata: metadata
+      schema: schema
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/landingai-ade-v1-openapi-original.json#POST /v1/ade/extract
+    - openapi/_original/landingai-ade-v2-openapi-original.json#POST /v2/extract
+    - openapi/_original/landingai-vision-tools-openapi-original.json#POST /v1/ade/extract

@@ -1,0 +1,48 @@
+provider: firecrawl
+apis_io: https://apis.io/providers/firecrawl/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - scrape
+    - extract
+    properties:
+      url: url
+      formats: formats
+      status: status
+      metadata: metadata
+      schema: schema
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/firecrawl-openapi-original.json#DELETE /batch/scrape/{id}
+    - openapi/_original/firecrawl-openapi-original.json#GET /batch/scrape/{id}
+    - openapi/_original/firecrawl-openapi-original.json#GET /extract/{id}
+    - openapi/_original/firecrawl-openapi-original.json#POST /batch/scrape
+    - openapi/_original/firecrawl-openapi-original.json#POST /extract
+  crawl:
+    path_segment:
+    - crawl
+    - map
+    properties:
+      url: url
+      limit: limit
+      status: status
+      allow_external_links: allowExternalLinks
+      exclude_paths: excludePaths
+      id: id
+      include_paths: includePaths
+      title: title
+      allow_subdomains: allowSubdomains
+      completed: completed
+      ignore_query_parameters: ignoreQueryParameters
+      include_subdomains: includeSubdomains
+      scrape_options: scrapeOptions
+      search: search
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/firecrawl-openapi-original.json#DELETE /crawl/{id}
+    - openapi/_original/firecrawl-openapi-original.json#GET /crawl/{id}
+    - openapi/_original/firecrawl-openapi-original.json#POST /crawl
+    - openapi/_original/firecrawl-openapi-original.json#POST /map

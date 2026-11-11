@@ -1,0 +1,12 @@
+provider: scrapybara
+apis_io: https://apis.io/providers/scrapybara/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - screenshot
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/scrapybara-openapi.yml#GET /instances/{instance_id}/screenshot

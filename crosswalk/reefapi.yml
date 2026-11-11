@@ -1,0 +1,47 @@
+provider: reefapi
+apis_io: https://apis.io/providers/reefapi/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - extract
+    - markdown
+    - fetch
+    - scrape
+    - html
+    properties:
+      url: url
+      formats:
+      - formats
+      - format
+      schema: schema
+      selector: selector
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /change-detect/v1/extract
+    - openapi/_original/reefapi-openapi.json#POST /dev-utils/v1/markdown
+    - openapi/_original/reefapi-openapi.json#POST /feed-gateway/v1/fetch
+    - openapi/_original/reefapi-openapi.json#POST /news-article/v1/extract
+    - openapi/_original/reefapi-openapi.json#POST /web-extract/v1/extract
+  crawl:
+    path_segment:
+    - map
+    - crawlers
+    - crawl
+    properties:
+      url: url
+      limit:
+      - limit
+      - max_pages
+      - max_depth
+      type: type
+      error: error
+      include_subdomains: include_subdomains
+      search: search
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /geo-intel/v1/crawlers
+    - openapi/_original/reefapi-openapi.json#POST /lei/v1/map
+    - openapi/_original/reefapi-openapi.json#POST /web-extract/v1/crawl
+    - openapi/_original/reefapi-openapi.json#POST /web-extract/v1/map

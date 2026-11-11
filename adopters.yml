@@ -1,0 +1,267 @@
+context: web-scraping
+generated: '2026-11-11'
+adopters:
+- provider: adscrawl
+  apis_io: https://apis.io/providers/adscrawl/
+  crosswalk: crosswalk/adscrawl.yml
+  concepts:
+  - scrape
+- provider: airtop
+  apis_io: https://apis.io/providers/airtop/
+  crosswalk: crosswalk/airtop.yml
+  concepts:
+  - scrape
+- provider: anchorbrowser
+  apis_io: https://apis.io/providers/anchorbrowser/
+  crosswalk: crosswalk/anchorbrowser.yml
+  concepts:
+  - scrape
+- provider: apifreaks-api-hub-for-developers
+  apis_io: https://apis.io/providers/apifreaks-api-hub-for-developers/
+  crosswalk: crosswalk/apifreaks-api-hub-for-developers.yml
+  concepts:
+  - scrape
+- provider: botify
+  apis_io: https://apis.io/providers/botify/
+  crosswalk: crosswalk/botify.yml
+  concepts:
+  - scrape
+- provider: bright-data
+  apis_io: https://apis.io/providers/bright-data/
+  crosswalk: crosswalk/bright-data.yml
+  concepts:
+  - scrape
+- provider: brightdata
+  apis_io: https://apis.io/providers/brightdata/
+  crosswalk: crosswalk/brightdata.yml
+  concepts:
+  - scrape
+- provider: browserbase
+  apis_io: https://apis.io/providers/browserbase/
+  crosswalk: crosswalk/browserbase.yml
+  concepts:
+  - scrape
+- provider: browserless
+  apis_io: https://apis.io/providers/browserless/
+  crosswalk: crosswalk/browserless.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: coasty
+  apis_io: https://apis.io/providers/coasty/
+  crosswalk: crosswalk/coasty.yml
+  concepts:
+  - scrape
+- provider: contextdev
+  apis_io: https://apis.io/providers/contextdev/
+  crosswalk: crosswalk/contextdev.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: diffbot
+  apis_io: https://apis.io/providers/diffbot/
+  crosswalk: crosswalk/diffbot.yml
+  concepts:
+  - crawl
+- provider: eigenpal
+  apis_io: https://apis.io/providers/eigenpal/
+  crosswalk: crosswalk/eigenpal.yml
+  concepts:
+  - scrape
+- provider: firecrawl
+  apis_io: https://apis.io/providers/firecrawl/
+  crosswalk: crosswalk/firecrawl.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: frostbyte
+  apis_io: https://apis.io/providers/frostbyte/
+  crosswalk: crosswalk/frostbyte.yml
+  concepts:
+  - scrape
+- provider: geekflare
+  apis_io: https://apis.io/providers/geekflare/
+  crosswalk: crosswalk/geekflare.yml
+  concepts:
+  - scrape
+- provider: getemboss-ai
+  apis_io: https://apis.io/providers/getemboss-ai/
+  crosswalk: crosswalk/getemboss-ai.yml
+  concepts:
+  - scrape
+- provider: hyperbrowser
+  apis_io: https://apis.io/providers/hyperbrowser/
+  crosswalk: crosswalk/hyperbrowser.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: kernel
+  apis_io: https://apis.io/providers/kernel/
+  crosswalk: crosswalk/kernel.yml
+  concepts:
+  - scrape
+- provider: kernel-so
+  apis_io: https://apis.io/providers/kernel-so/
+  crosswalk: crosswalk/kernel-so.yml
+  concepts:
+  - scrape
+- provider: landingai
+  apis_io: https://apis.io/providers/landingai/
+  crosswalk: crosswalk/landingai.yml
+  concepts:
+  - scrape
+- provider: mercury-hq-com
+  apis_io: https://apis.io/providers/mercury-hq-com/
+  crosswalk: crosswalk/mercury-hq-com.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: nace-ai
+  apis_io: https://apis.io/providers/nace-ai/
+  crosswalk: crosswalk/nace-ai.yml
+  concepts:
+  - scrape
+- provider: nimbleway
+  apis_io: https://apis.io/providers/nimbleway/
+  crosswalk: crosswalk/nimbleway.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: notte
+  apis_io: https://apis.io/providers/notte/
+  crosswalk: crosswalk/notte.yml
+  concepts:
+  - scrape
+- provider: openserp
+  apis_io: https://apis.io/providers/openserp/
+  crosswalk: crosswalk/openserp.yml
+  concepts:
+  - scrape
+- provider: pagesnap
+  apis_io: https://apis.io/providers/pagesnap/
+  crosswalk: crosswalk/pagesnap.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: reducto
+  apis_io: https://apis.io/providers/reducto/
+  crosswalk: crosswalk/reducto.yml
+  concepts:
+  - scrape
+- provider: reducto-ai
+  apis_io: https://apis.io/providers/reducto-ai/
+  crosswalk: crosswalk/reducto-ai.yml
+  concepts:
+  - scrape
+- provider: reefapi
+  apis_io: https://apis.io/providers/reefapi/
+  crosswalk: crosswalk/reefapi.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: runautomat
+  apis_io: https://apis.io/providers/runautomat/
+  crosswalk: crosswalk/runautomat.yml
+  concepts:
+  - scrape
+- provider: s1-dev
+  apis_io: https://apis.io/providers/s1-dev/
+  crosswalk: crosswalk/s1-dev.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: schemaextract
+  apis_io: https://apis.io/providers/schemaextract/
+  crosswalk: crosswalk/schemaextract.yml
+  concepts:
+  - scrape
+- provider: scrapfly
+  apis_io: https://apis.io/providers/scrapfly/
+  crosswalk: crosswalk/scrapfly.yml
+  concepts:
+  - scrape
+- provider: scrapybara
+  apis_io: https://apis.io/providers/scrapybara/
+  crosswalk: crosswalk/scrapybara.yml
+  concepts:
+  - scrape
+- provider: screenshotapi-to
+  apis_io: https://apis.io/providers/screenshotapi-to/
+  crosswalk: crosswalk/screenshotapi-to.yml
+  concepts:
+  - scrape
+- provider: sensible-so
+  apis_io: https://apis.io/providers/sensible-so/
+  crosswalk: crosswalk/sensible-so.yml
+  concepts:
+  - scrape
+- provider: shveik
+  apis_io: https://apis.io/providers/shveik/
+  crosswalk: crosswalk/shveik.yml
+  concepts:
+  - scrape
+- provider: snapapi
+  apis_io: https://apis.io/providers/snapapi/
+  crosswalk: crosswalk/snapapi.yml
+  concepts:
+  - scrape
+- provider: snapapi-pics
+  apis_io: https://apis.io/providers/snapapi-pics/
+  crosswalk: crosswalk/snapapi-pics.yml
+  concepts:
+  - scrape
+- provider: social-fetch
+  apis_io: https://apis.io/providers/social-fetch/
+  crosswalk: crosswalk/social-fetch.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: socialcrawl
+  apis_io: https://apis.io/providers/socialcrawl/
+  crosswalk: crosswalk/socialcrawl.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: spider-cloud
+  apis_io: https://apis.io/providers/spider-cloud/
+  crosswalk: crosswalk/spider-cloud.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: steel-dev
+  apis_io: https://apis.io/providers/steel-dev/
+  crosswalk: crosswalk/steel-dev.yml
+  concepts:
+  - scrape
+- provider: structify
+  apis_io: https://apis.io/providers/structify/
+  crosswalk: crosswalk/structify.yml
+  concepts:
+  - scrape
+- provider: tensorlake
+  apis_io: https://apis.io/providers/tensorlake/
+  crosswalk: crosswalk/tensorlake.yml
+  concepts:
+  - scrape
+- provider: the-hog
+  apis_io: https://apis.io/providers/the-hog/
+  crosswalk: crosswalk/the-hog.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: webcrawlerapi-com
+  apis_io: https://apis.io/providers/webcrawlerapi-com/
+  crosswalk: crosswalk/webcrawlerapi-com.yml
+  concepts:
+  - crawl
+  - scrape
+- provider: webscraping-ai
+  apis_io: https://apis.io/providers/webscraping-ai/
+  crosswalk: crosswalk/webscraping-ai.yml
+  concepts:
+  - scrape
+- provider: zyte
+  apis_io: https://apis.io/providers/zyte/
+  crosswalk: crosswalk/zyte.yml
+  concepts:
+  - scrape

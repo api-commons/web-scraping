@@ -1,0 +1,16 @@
+provider: browserbase
+apis_io: https://apis.io/providers/browserbase/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - fetch
+    properties:
+      url: url
+      formats: format
+      schema: schema
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/browserbase-openapi.yml#POST /v1/fetch

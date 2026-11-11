@@ -1,0 +1,16 @@
+provider: airtop
+apis_io: https://apis.io/providers/airtop/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - screenshot
+    - extract
+    properties:
+      id: jobId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/airtop-openapi.json#POST /v1/async/sessions/{sessionId}/windows/{windowId}/screenshot
+    - openapi/_original/airtop-openapi.json#POST /v1/sessions/{sessionId}/windows/{windowId}/screenshot
+    - openapi/_original/airtop-openapi.json#POST /v2/sessions/{sessionId}/windows/{windowId}/extract

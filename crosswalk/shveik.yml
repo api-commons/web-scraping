@@ -1,0 +1,23 @@
+provider: shveik
+apis_io: https://apis.io/providers/shveik/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - screenshot
+    - fetch
+    properties:
+      url: url
+      formats: format
+      full_page: fullPage
+      height: height
+      width: width
+      selector: selector
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agdata-openapi.json#POST /mpp/screenshot
+    - openapi/_original/agdata-openapi.json#POST /x402/screenshot
+    - openapi/_original/agproxy-openapi.json#POST /mpp/fetch
+    - openapi/_original/agproxy-openapi.json#POST /x402/fetch
+    - openapi/_original/shveik-agdata-openapi.yml#POST /mpp/screenshot

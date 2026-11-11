@@ -1,0 +1,14 @@
+provider: sensible-so
+apis_io: https://apis.io/providers/sensible-so/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - extract
+    properties:
+      status: status
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sensible-extractions-api-openapi.yml#POST /extract/{document_type}

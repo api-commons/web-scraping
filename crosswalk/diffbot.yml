@@ -1,0 +1,15 @@
+provider: diffbot
+apis_io: https://apis.io/providers/diffbot/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  crawl:
+    path_segment:
+    - crawl
+    properties:
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/diffbot-crawl-openapi.json#GET /crawl
+    - openapi/_original/diffbot-crawl-openapi.json#POST /crawl
+    - openapi/_original/diffbot-openapi.yml#GET /v3/crawl

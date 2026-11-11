@@ -1,0 +1,14 @@
+provider: kernel
+apis_io: https://apis.io/providers/kernel/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - screenshot
+    properties:
+      height: height
+      width: width
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/kernel-openapi.json#POST /browsers/{id_or_name}/computer/screenshot

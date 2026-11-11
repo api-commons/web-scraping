@@ -1,0 +1,17 @@
+provider: scrapfly
+apis_io: https://apis.io/providers/scrapfly/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - scrape
+    - screenshot
+    properties:
+      url: url
+      formats: format
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/scrapfly-scrape-openapi.yml#GET /scrape
+    - openapi/_original/scrapfly-scrape-openapi.yml#GET /screenshot
+    - openapi/_original/scrapfly-scrape-openapi.yml#POST /scrape

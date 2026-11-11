@@ -1,0 +1,14 @@
+provider: coasty
+apis_io: https://apis.io/providers/coasty/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - screenshot
+    properties:
+      height: height
+      width: width
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/coasty-openapi.json#GET /v1/machines/{machine_id}/screenshot

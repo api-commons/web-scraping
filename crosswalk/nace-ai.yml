@@ -1,0 +1,15 @@
+provider: nace-ai
+apis_io: https://apis.io/providers/nace-ai/
+context: web-scraping
+generated: '2026-11-11'
+concepts:
+  scrape:
+    path_segment:
+    - extract
+    properties:
+      status: status
+      schema: schema
+      id: job_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/nace-ai-ndi-openapi.json#POST /api/v1/extract

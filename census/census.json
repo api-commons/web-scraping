@@ -1,0 +1,3146 @@
+{
+ "cohort_size": 109,
+ "unreadable": [],
+ "concepts": {
+  "scrape": {
+   "adscrawl": {
+    "segments": [
+     "html",
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "viewport": "object",
+     "locale": "string",
+     "timezoneId": "string",
+     "geolocation": "object",
+     "proxy": "object",
+     "countryCode": "string",
+     "userAgent": "string",
+     "userAgentMode": "string",
+     "userAgentOs": "string",
+     "fingerprint": "object",
+     "cookies": "array",
+     "url": "string",
+     "waitUntil": "string",
+     "timeoutMs": "number",
+     "contentMode": "string",
+     "selector": "string",
+     "fullPage": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/adscrawl-openapi.yaml#POST /html",
+     "openapi/_original/adscrawl-openapi.yaml#POST /screenshot"
+    ]
+   },
+   "airtop": {
+    "segments": [
+     "screenshot",
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "errors": [
+      "array",
+      "null"
+     ],
+     "requestId": "string",
+     "warnings": [
+      "array",
+      "null"
+     ],
+     "async": "object",
+     "clientRequestId": "string",
+     "configuration": "object",
+     "costThresholdCredits": "integer",
+     "createDraftTestCase": "boolean",
+     "timeThresholdSeconds": "integer",
+     "modelResponse": "string",
+     "jobId": "string",
+     "nodeHandleId": "string",
+     "optional": "boolean",
+     "prompt": "string"
+    },
+    "evidence": [
+     "openapi/_original/airtop-openapi.json#POST /v1/async/sessions/{sessionId}/windows/{windowId}/screenshot",
+     "openapi/_original/airtop-openapi.json#POST /v1/sessions/{sessionId}/windows/{windowId}/screenshot",
+     "openapi/_original/airtop-openapi.json#POST /v2/sessions/{sessionId}/windows/{windowId}/extract"
+    ]
+   },
+   "anchorbrowser": {
+    "segments": [
+     "screenshot",
+     "fetch"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "width": "integer",
+     "height": "integer",
+     "image_quality": "integer",
+     "wait": "integer",
+     "scroll_all_content": "boolean",
+     "capture_full_height": "boolean",
+     "s3_target_address": "string"
+    },
+    "evidence": [
+     "openapi/_original/anchorbrowser-openapi.yml#GET /v1/sessions/{sessionId}/screenshot",
+     "openapi/_original/anchorbrowser-openapi.yml#GET /v1/sessions/{session_id}/recordings/primary/fetch",
+     "openapi/_original/anchorbrowser-openapi.yml#POST /v1/tools/screenshot"
+    ]
+   },
+   "apifreaks-api-hub-for-developers": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "url": null,
+     "error_message": [
+      "string",
+      "null"
+     ],
+     "file_type": "string",
+     "width": "integer",
+     "height": "integer",
+     "full_page": "boolean",
+     "fresh": "boolean",
+     "no_cookie_banners": "boolean",
+     "enable_caching": "boolean",
+     "block_ads": "boolean",
+     "block_chat_widgets": "boolean",
+     "extract_text": "boolean",
+     "extract_html": "boolean",
+     "extract_markdown": "boolean",
+     "get_image_urls": "boolean",
+     "destroy_screenshot": "boolean",
+     "lazy_load": "boolean",
+     "scroll_delay": "integer",
+     "retina": "boolean",
+     "dark_mode": "boolean",
+     "block_tracking": "boolean",
+     "enable_incognito": "boolean",
+     "omit_background": "boolean",
+     "thumbnail_width": "integer",
+     "adjust_top": "integer",
+     "wait_for_event": "string",
+     "grayscale": "integer",
+     "delay": "integer",
+     "timeout": "integer",
+     "ttl": "integer",
+     "image_quality": "integer",
+     "clip[x]": "integer",
+     "clip[y]": "integer",
+     "clip[width]": "integer",
+     "clip[height]": "integer",
+     "css_url": "string",
+     "css": "string",
+     "js_url": "string",
+     "js": "string",
+     "block_js": "boolean",
+     "block_stylesheets": "boolean",
+     "block_images": "boolean",
+     "block_media": "boolean",
+     "block_font": "boolean",
+     "block_text_track": "boolean",
+     "block_xhr": "boolean",
+     "block_fetch": "boolean",
+     "block_event_source": "boolean",
+     "block_web_socket": "boolean",
+     "block_manifest": "boolean",
+     "block_specific_requests": "string",
+     "blur_selector": "string",
+     "remove_selector": "string",
+     "scroll_to_element": "string",
+     "selector": "string",
+     "selector_to_click": "string",
+     "click_recursion": "integer",
+     "result_file_name": "string",
+     "user_agent": "string",
+     "accept_languages": "string",
+     "proxy": "string",
+     "headers": "string",
+     "cookies": "string",
+     "custom_html": "string",
+     "fail_on_error": "boolean",
+     "longitude": "number",
+     "latitude": "number",
+     "scrolling_screenshot": "boolean",
+     "scroll_speed": "string",
+     "duration": "number",
+     "scroll_back": "boolean",
+     "start_immediately": "boolean",
+     "multiple_scrolling": "boolean",
+     "sizes": "array",
+     "video": "boolean",
+     "screenshot": "string",
+     "created_at": "string",
+     "format": "string",
+     "output": "string"
+    },
+    "evidence": [
+     "openapi/_original/apifreaks-api-hub-for-developers-bulk-screenshot-openapi.json#POST /screenshot",
+     "openapi/_original/apifreaks-api-hub-for-developers-website-screenshot-openapi.json#GET /screenshot"
+    ]
+   },
+   "botify": {
+    "segments": [
+     "html"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/botify-api-swagger.json#GET /analyses/{username}/{project_slug}/{analysis_slug}/urls/html/{url}"
+    ]
+   },
+   "bright-data": {
+    "segments": [
+     "scrape"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "snapshot_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/bright-data-web-scraper-api-openapi.yml#POST /datasets/v3/scrape"
+    ]
+   },
+   "brightdata": {
+    "segments": [
+     "scrape"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/brightdata-openapi.yml#POST /datasets/v3/scrape"
+    ]
+   },
+   "browserbase": {
+    "segments": [
+     "fetch"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "statusCode": "integer",
+     "headers": "object",
+     "content": null,
+     "contentType": "string",
+     "encoding": "string",
+     "url": "string",
+     "allowRedirects": "boolean",
+     "allowInsecureSsl": "boolean",
+     "proxies": "boolean",
+     "format": null,
+     "schema": "object"
+    },
+    "evidence": [
+     "openapi/_original/browserbase-openapi.yml#POST /v1/fetch"
+    ]
+   },
+   "browserless": {
+    "segments": [
+     "content",
+     "scrape",
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "addScriptTag": "array",
+     "addStyleTag": "array",
+     "authenticate": null,
+     "bestAttempt": "boolean",
+     "cookies": "array",
+     "emulateMediaType": "string",
+     "gotoOptions": "object",
+     "html": "string",
+     "rejectRequestPattern": "array",
+     "rejectResourceTypes": "array",
+     "requestInterceptors": "array",
+     "setExtraHTTPHeaders": "object",
+     "setJavaScriptEnabled": "boolean",
+     "url": "string",
+     "userAgent": "object",
+     "viewport": null,
+     "waitForEvent": "object",
+     "waitForFunction": "object",
+     "waitForSelector": "object",
+     "waitForTimeout": "number",
+     "attributes": "array",
+     "height": "number",
+     "left": "number",
+     "text": "string",
+     "top": "number",
+     "width": "number",
+     "debugOpts": "object",
+     "elements": "array",
+     "options": "object",
+     "scrollPage": "boolean",
+     "selector": "string",
+     "blockConsentModals": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/browserless-openapi.yml#POST /chrome/content",
+     "openapi/_original/browserless-openapi.yml#POST /chrome/scrape",
+     "openapi/_original/browserless-openapi.yml#POST /chrome/screenshot",
+     "openapi/_original/browserless-openapi.yml#POST /chromium/content",
+     "openapi/_original/browserless-openapi.yml#POST /chromium/scrape",
+     "openapi/_original/browserless-openapi.yml#POST /edge/content",
+     "openapi/_original/browserless-openapi.yml#POST /edge/scrape",
+     "openapi/_original/browserless-openapi.yml#POST /edge/screenshot",
+     "openapi/_original/browserless-openapi.yml#POST /screenshot"
+    ]
+   },
+   "coasty": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "machine_id": "string",
+     "image_b64": "string",
+     "mime_type": "string",
+     "width": "integer",
+     "height": "integer",
+     "captured_at": "string",
+     "frame_id": [
+      "string",
+      "null"
+     ],
+     "request_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/coasty-openapi.json#GET /v1/machines/{machine_id}/screenshot"
+    ]
+   },
+   "contextdev": {
+    "segments": [
+     "scrape",
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "html": "object",
+     "markdown": "object",
+     "screenshot": "object",
+     "images": "object",
+     "bytes": "object",
+     "parsed": "object",
+     "highlights": "object",
+     "json": "object",
+     "product": "object",
+     "profile": [
+      "object",
+      "null"
+     ],
+     "isPartial": "boolean",
+     "metadata": "object",
+     "request_id": "string",
+     "cache_metadata": "object",
+     "key_metadata": "object",
+     "formats": "object",
+     "markdownParams": "object",
+     "screenshotParams": "object",
+     "imageParams": "object",
+     "parseParams": null,
+     "highlightsParams": "object",
+     "jsonParams": "object",
+     "productParams": "object",
+     "sharedParams": "object",
+     "maxAgeMs": "integer",
+     "zdr": "string",
+     "timeoutOpts": "object",
+     "tags": "array",
+     "partial": "boolean",
+     "status": "string",
+     "urls_analyzed": "array",
+     "data": "object",
+     "schema": "object",
+     "instructions": "string",
+     "factCheck": "boolean",
+     "followSubdomains": "boolean",
+     "maxPages": "integer",
+     "maxDepth": "integer",
+     "pdf": "object",
+     "includeFrames": "boolean",
+     "waitForMs": [
+      "integer",
+      "null"
+     ],
+     "settleAnimations": "boolean",
+     "actions": [
+      "array",
+      "null"
+     ],
+     "stopAfterMs": "integer"
+    },
+    "evidence": [
+     "openapi/_original/contextdev-openapi.json#POST /web/extract",
+     "openapi/_original/contextdev-openapi.json#POST /web/scrape"
+    ]
+   },
+   "eigenpal": {
+    "segments": [
+     "content"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/eigenpal-openapi.json#GET /v1/files/{id}/content",
+     "openapi/_original/eigenpal-openapi.json#GET /v1/human-reviews/{taskId}/files/{fileId}/content",
+     "openapi/_original/eigenpal-openapi.json#GET /v1/templates/{id}/content"
+    ]
+   },
+   "firecrawl": {
+    "segments": [
+     "scrape",
+     "extract"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "markdown": "string",
+     "summary": "string",
+     "html": "string",
+     "rawHtml": "string",
+     "screenshot": "string",
+     "audio": "string",
+     "links": "array",
+     "actions": "object",
+     "metadata": "object",
+     "warning": "string",
+     "changeTracking": "object",
+     "branding": "object",
+     "url": "string",
+     "formats": "array",
+     "onlyMainContent": "boolean",
+     "onlyCleanContent": "boolean",
+     "includeTags": "array",
+     "excludeTags": "array",
+     "maxAge": "integer",
+     "minAge": "integer",
+     "headers": "object",
+     "waitFor": "integer",
+     "mobile": "boolean",
+     "skipTlsVerification": "boolean",
+     "timeout": "integer",
+     "parsers": "array",
+     "location": "object",
+     "removeBase64Images": "boolean",
+     "blockAds": "boolean",
+     "proxy": "string",
+     "storeInCache": "boolean",
+     "lockdown": "boolean",
+     "profile": "object",
+     "zeroDataRetention": "boolean",
+     "success": "boolean",
+     "id": "string",
+     "invalidURLs": "array",
+     "urls": "array",
+     "webhook": "object",
+     "maxConcurrency": "integer",
+     "ignoreInvalidURLs": "boolean",
+     "status": "string",
+     "total": "integer",
+     "completed": "integer",
+     "creditsUsed": "integer",
+     "expiresAt": "string",
+     "next": "string",
+     "data": "array",
+     "message": "string",
+     "prompt": "string",
+     "schema": "object",
+     "enableWebSearch": "boolean",
+     "ignoreSitemap": "boolean",
+     "includeSubdomains": "boolean",
+     "showSources": "boolean",
+     "scrapeOptions": "object",
+     "tokensUsed": "integer"
+    },
+    "evidence": [
+     "openapi/_original/firecrawl-openapi-original.json#DELETE /batch/scrape/{id}",
+     "openapi/_original/firecrawl-openapi-original.json#GET /batch/scrape/{id}",
+     "openapi/_original/firecrawl-openapi-original.json#GET /extract/{id}",
+     "openapi/_original/firecrawl-openapi-original.json#POST /batch/scrape",
+     "openapi/_original/firecrawl-openapi-original.json#POST /extract",
+     "openapi/_original/firecrawl-openapi-original.json#POST /scrape"
+    ]
+   },
+   "frostbyte": {
+    "segments": [
+     "screenshot",
+     "scrape",
+     "extract"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/agent-scraper/api/scrape",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/agent-screenshot/api/screenshot",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/agent-scraper/api/extract",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/agent-scraper/api/scrape",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/agent-screenshot/api/screenshot",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/agent-search/api/search/extract",
+     "openapi/_original/frostbyte-screenshot-openapi.yml#GET /v1/agent-screenshot/api/screenshot",
+     "openapi/_original/frostbyte-screenshot-openapi.yml#POST /v1/agent-screenshot/api/screenshot",
+     "openapi/_original/frostbyte-web-scraper-openapi.yml#GET /v1/agent-scraper/api/scrape",
+     "openapi/_original/frostbyte-web-scraper-openapi.yml#POST /v1/agent-scraper/api/extract",
+     "openapi/_original/frostbyte-web-scraper-openapi.yml#POST /v1/agent-scraper/api/scrape"
+    ]
+   },
+   "geekflare": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "timestamp": "number",
+     "apiStatus": "string",
+     "apiCode": "number",
+     "meta": null,
+     "data": "string",
+     "inline": null,
+     "url": "string",
+     "device": "string",
+     "proxyCountry": "string",
+     "type": "string",
+     "fullPage": "boolean",
+     "blockAds": "boolean",
+     "hideCookie": "boolean",
+     "skipCaptcha": "boolean",
+     "addTimestamp": "boolean",
+     "pageHeight": "number",
+     "viewportWidth": "number",
+     "viewportHeight": "number",
+     "theme": "string",
+     "removeBackground": "boolean",
+     "highlightLinks": "boolean",
+     "delay": "number",
+     "disableAnimations": "boolean",
+     "quality": "number",
+     "scaleFactor": "number",
+     "captureBeyondViewport": "boolean",
+     "selector": "string",
+     "fallbackToFullPage": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/geekflare-openapi.json#POST /screenshot"
+    ]
+   },
+   "getemboss-ai": {
+    "segments": [
+     "content",
+     "render"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/getemboss-ai-account-openapi.json#GET /artifacts/{artifact_id}/content",
+     "openapi/_original/getemboss-ai-account-openapi.json#POST /admin/forms/with-context/{job_id}/render",
+     "openapi/_original/getemboss-ai-account-openapi.yml#GET /artifacts/{artifact_id}/content",
+     "openapi/_original/getemboss-ai-account-openapi.yml#POST /admin/forms/with-context/{job_id}/render"
+    ]
+   },
+   "hyperbrowser": {
+    "segments": [
+     "scrape",
+     "extract",
+     "fetch"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "jobId": "string",
+     "url": "string",
+     "sessionOptions": "object",
+     "scrapeOptions": "object",
+     "metadata": "object",
+     "markdown": "string",
+     "html": "string",
+     "links": "array",
+     "screenshot": "string",
+     "urls": "array",
+     "systemPrompt": "string",
+     "maxLinks": "number",
+     "prompt": "string",
+     "schema": "object",
+     "waitFor": "number",
+     "status": "string",
+     "data": "object",
+     "error": "string",
+     "json": "object",
+     "branding": "object",
+     "stealth": "string",
+     "outputs": "object",
+     "browser": "object",
+     "navigation": "object",
+     "cache": "object"
+    },
+    "evidence": [
+     "openapi/_original/hyperbrowser-openapi.json#GET /api/extract/{id}",
+     "openapi/_original/hyperbrowser-openapi.json#GET /api/scrape/{id}",
+     "openapi/_original/hyperbrowser-openapi.json#POST /api/extract",
+     "openapi/_original/hyperbrowser-openapi.json#POST /api/scrape",
+     "openapi/_original/hyperbrowser-openapi.json#POST /api/scrape/batch",
+     "openapi/_original/hyperbrowser-openapi.json#POST /api/web/fetch",
+     "openapi/_original/hyperbrowser-openapi.json#POST /x402/web/fetch"
+    ]
+   },
+   "kernel": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "height": "integer",
+     "true": "integer",
+     "width": "integer",
+     "x": "integer"
+    },
+    "evidence": [
+     "openapi/_original/kernel-openapi.json#POST /browsers/{id_or_name}/computer/screenshot"
+    ]
+   },
+   "kernel-so": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "x": "integer",
+     "y": "integer",
+     "width": "integer",
+     "height": "integer"
+    },
+    "evidence": [
+     "openapi/_original/kernel-openapi.yml#POST /browsers/{id}/computer/screenshot"
+    ]
+   },
+   "landingai": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "extraction": "object",
+     "extraction_metadata": "object",
+     "metadata": "object",
+     "markdown": "string",
+     "schema_violation_error": null,
+     "warnings": "array",
+     "schema": "object",
+     "markdown_url": null,
+     "model": null,
+     "options": null
+    },
+    "evidence": [
+     "openapi/_original/landingai-ade-v1-openapi-original.json#POST /v1/ade/extract",
+     "openapi/_original/landingai-ade-v2-openapi-original.json#POST /v2/extract",
+     "openapi/_original/landingai-vision-tools-openapi-original.json#POST /v1/ade/extract"
+    ]
+   },
+   "mercury-hq-com": {
+    "segments": [
+     "fetch",
+     "extract",
+     "markdown"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "url": "string",
+     "status": "integer",
+     "title": "string",
+     "text": "string",
+     "format": "string",
+     "description": "string",
+     "wordCount": "integer",
+     "extract": "object",
+     "links": "array",
+     "contentType": "string",
+     "bytes": "integer",
+     "truncated": "boolean",
+     "error": "string",
+     "attestation": "object",
+     "schema": "object",
+     "coerced": "array",
+     "redirects": "array",
+     "fetchedAt": "string",
+     "metered": "boolean",
+     "delivered": "string",
+     "kind": "string",
+     "data": "object"
+    },
+    "evidence": [
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/extract",
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/fetch",
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/markdown",
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.yml#GET /buy/extract",
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.yml#GET /buy/fetch",
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.yml#GET /buy/markdown"
+    ]
+   },
+   "nace-ai": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "job_id": "string",
+     "action": "string",
+     "status": "string",
+     "result": null,
+     "error": null,
+     "created_at": "string",
+     "started_at": null,
+     "completed_at": null,
+     "file": "object",
+     "schema": "object",
+     "markdown_url": null,
+     "idempotency_key": null
+    },
+    "evidence": [
+     "openapi/_original/nace-ai-ndi-openapi.json#POST /api/v1/extract"
+    ]
+   },
+   "nimbleway": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "task_id": "string",
+     "status": "string",
+     "status_code": "integer",
+     "data": "object",
+     "metadata": "object",
+     "warnings": "array",
+     "country": "string",
+     "state": "string",
+     "city": "string",
+     "locale": "string",
+     "render": null,
+     "parse": "boolean",
+     "parser": "object",
+     "formats": "array",
+     "driver": "string",
+     "auto_driver_configuration": "object",
+     "network_capture": "array",
+     "browser_actions": "array",
+     "browser": null,
+     "os": "string",
+     "no_userbrowser": "boolean",
+     "device": "string",
+     "tag": "string",
+     "is_xhr": "boolean",
+     "http2": "boolean",
+     "expected_status_codes": "array",
+     "referrer_type": null,
+     "method": "string",
+     "render_options": "object",
+     "id": "string",
+     "output_url": "string",
+     "status_url": "string",
+     "download_url": "string",
+     "error": "string",
+     "error_type": "string",
+     "created_at": "string",
+     "modified_at": "string",
+     "account_name": "string",
+     "input": null,
+     "_query": null,
+     "batch_id": "string",
+     "api_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/nimbleway-openapi.json#POST /v1/extract",
+     "openapi/_original/nimbleway-openapi.json#POST /v1/extract/batch"
+    ]
+   },
+   "notte": {
+    "segments": [
+     "scrape",
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "content": "string",
+     "structured": "object",
+     "links": "array",
+     "images": "array",
+     "selector": "string",
+     "scrape_links": "boolean",
+     "scrape_images": "boolean",
+     "ignored_tags": "array",
+     "only_main_content": "boolean",
+     "only_images": "boolean",
+     "response_format": "object",
+     "instructions": "string",
+     "use_link_placeholders": "boolean",
+     "url": "string",
+     "headless": "boolean",
+     "solve_captchas": "boolean",
+     "proxies": null,
+     "browser_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/notte-openapi.yml#POST /scrape",
+     "openapi/_original/notte-openapi.yml#POST /sessions/{session_id}/page/scrape",
+     "openapi/_original/notte-openapi.yml#POST /sessions/{session_id}/page/screenshot"
+    ]
+   },
+   "openserp": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "title": "string",
+     "description": "string",
+     "markdown": "string",
+     "text": "string",
+     "headings": "array",
+     "links": "array",
+     "canonical": "string",
+     "lang": "string",
+     "schema_org": "array",
+     "og_tags": "object",
+     "meta": "object",
+     "mode": "string",
+     "clean": "boolean",
+     "use_llms_txt": "boolean",
+     "min_runes": "integer",
+     "page_content": "string",
+     "metadata": "object",
+     "urls": "array"
+    },
+    "evidence": [
+     "openapi/_original/openserp-oss-openapi.yml#GET /extract",
+     "openapi/_original/openserp-oss-openapi.yml#POST /extract",
+     "openapi/_original/openserp-oss-openapi.yml#POST /extract/batch"
+    ]
+   },
+   "pagesnap": {
+    "segments": [
+     "screenshot",
+     "extract",
+     "render"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "width": "integer",
+     "height": "integer",
+     "full_page": "boolean",
+     "format": "string",
+     "quality": "integer",
+     "scale": "number",
+     "dark": "boolean",
+     "wait": "integer",
+     "wait_until": "string",
+     "block_ads": "boolean",
+     "hide_cookie_banners": "boolean",
+     "timeout": "integer",
+     "selector": "string",
+     "device": "string",
+     "user_agent": "string",
+     "actions": "array",
+     "lang": "string",
+     "timezone": "string",
+     "ok": null,
+     "jsonLd": "array",
+     "microdata": "array",
+     "rdfa": "array",
+     "products": "array",
+     "articles": "array",
+     "breadcrumbs": "array",
+     "faqs": "array",
+     "html": "string",
+     "type": "string",
+     "landscape": "boolean",
+     "margin": "string",
+     "print_background": "boolean",
+     "page_ranges": "string",
+     "header": "string",
+     "footer": "string",
+     "page_numbers": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/pagesnap-openapi.json#GET /v1/extract",
+     "openapi/_original/pagesnap-openapi.json#GET /v1/screenshot",
+     "openapi/_original/pagesnap-openapi.json#GET /x402/v1/extract",
+     "openapi/_original/pagesnap-openapi.json#GET /x402/v1/screenshot",
+     "openapi/_original/pagesnap-openapi.json#POST /v1/render",
+     "openapi/_original/pagesnap-openapi.json#POST /v1/screenshot",
+     "openapi/_original/pagesnap-openapi.json#POST /x402/v1/render"
+    ]
+   },
+   "reducto": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "input": null,
+     "parsing": "object",
+     "instructions": "object",
+     "settings": "object"
+    },
+    "evidence": [
+     "openapi/_original/reducto-document-api-openapi.yml#POST /extract"
+    ]
+   },
+   "reducto-ai": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "input": null,
+     "parsing": "object",
+     "instructions": "object",
+     "settings": "object"
+    },
+    "evidence": [
+     "openapi/_original/reducto-extract-api-openapi.yml#POST /extract"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "extract",
+     "markdown",
+     "fetch",
+     "scrape",
+     "html"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "url": "string",
+     "selector": "string",
+     "follow_redirects": "string",
+     "input": "string",
+     "limit": "string",
+     "sort_by": "string",
+     "sort_dir": "string",
+     "include_content": "string",
+     "since": "string",
+     "until": "string",
+     "render": "string",
+     "include_markdown": "string",
+     "formats": "string",
+     "only_main_content": "string",
+     "include_tags": "string",
+     "exclude_tags": "string",
+     "target_selector": "string",
+     "schema": "string",
+     "deterministic_only": "string",
+     "title": "string",
+     "lang": "string",
+     "format": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /change-detect/v1/extract",
+     "openapi/_original/reefapi-openapi.json#POST /dev-utils/v1/markdown",
+     "openapi/_original/reefapi-openapi.json#POST /feed-gateway/v1/fetch",
+     "openapi/_original/reefapi-openapi.json#POST /news-article/v1/extract",
+     "openapi/_original/reefapi-openapi.json#POST /web-extract/v1/extract",
+     "openapi/_original/reefapi-openapi.json#POST /web-extract/v1/scrape",
+     "openapi/_original/reefapi-openapi.json#POST /wikipedia/v1/html"
+    ]
+   },
+   "runautomat": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "data": "object"
+    },
+    "evidence": [
+     "openapi/_original/runautomat-extract-openapi.json#POST /api/extract"
+    ]
+   },
+   "s1-dev": {
+    "segments": [
+     "screenshot",
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "format": "string",
+     "full_page": "boolean",
+     "viewport": "object",
+     "wait_until": "string",
+     "wait_for_selector": "string",
+     "selector": "string",
+     "delay_ms": "integer",
+     "timeout_ms": "integer",
+     "quality": "integer",
+     "omit_background": "boolean",
+     "color_scheme": "string",
+     "animations": "string",
+     "success": "boolean",
+     "extractParameters": "object",
+     "results": null,
+     "prompt": "string",
+     "response_format": "object"
+    },
+    "evidence": [
+     "openapi/_original/s1-dev-openapi.yml#POST /extract",
+     "openapi/_original/s1-dev-openapi.yml#POST /screenshot",
+     "openapi/_original/search1api-openapi.json#POST /extract",
+     "openapi/_original/search1api-openapi.json#POST /screenshot"
+    ]
+   },
+   "schemaextract": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": "object",
+     "meta": "object",
+     "schema": "object",
+     "file_base64": "string",
+     "filename": "string",
+     "mime": "string",
+     "preset": "string",
+     "include_raw_text": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/schemaextract-openapi.json#POST /v1/extract",
+     "openapi/_original/schemaextract-openapi.yml#POST /v1/extract"
+    ]
+   },
+   "scrapfly": {
+    "segments": [
+     "scrape",
+     "screenshot"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "content": "string",
+     "content_type": "string",
+     "url": "string",
+     "status_code": "integer",
+     "cookies": "array",
+     "request_headers": "object",
+     "response_headers": "object",
+     "screenshots": "object",
+     "dns": "object",
+     "ssl": "object",
+     "extracted_data": "object",
+     "key": "string",
+     "render_js": "boolean",
+     "asp": "boolean",
+     "country": "string",
+     "proxy_pool": "string",
+     "format": "string",
+     "headers": "object",
+     "timeout": "integer",
+     "retry": "boolean",
+     "session": "string",
+     "cache": "boolean",
+     "cache_ttl": "integer",
+     "extraction_template": "string",
+     "extraction_prompt": "string",
+     "debug": "boolean",
+     "correlation_id": "string",
+     "tags": "array",
+     "webhook_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/scrapfly-scrape-openapi.yml#GET /scrape",
+     "openapi/_original/scrapfly-scrape-openapi.yml#GET /screenshot",
+     "openapi/_original/scrapfly-scrape-openapi.yml#POST /scrape"
+    ]
+   },
+   "scrapybara": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "base_64_image": "string"
+    },
+    "evidence": [
+     "openapi/_original/scrapybara-openapi.yml#GET /instances/{instance_id}/screenshot"
+    ]
+   },
+   "screenshotapi-to": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "html": "string",
+     "width": "integer",
+     "height": "integer",
+     "fullPage": "boolean",
+     "type": "string",
+     "quality": "integer",
+     "colorScheme": "string",
+     "waitUntil": "string",
+     "waitForSelector": "string",
+     "delay": "integer",
+     "blockAds": "boolean",
+     "removeCookieBanners": "boolean",
+     "cssInject": "string",
+     "jsInject": "string",
+     "stealthMode": "boolean",
+     "devicePixelRatio": "integer",
+     "timezone": "string",
+     "locale": "string",
+     "cacheTtl": "integer",
+     "preloadFonts": "boolean",
+     "removeElements": "array",
+     "removePopups": "boolean",
+     "mockupDevice": "string",
+     "geoLocation": "object"
+    },
+    "evidence": [
+     "openapi/_original/screenshotapi-to-openapi.json#GET /api/v1/screenshot",
+     "openapi/_original/screenshotapi-to-openapi.json#POST /api/v1/screenshot"
+    ]
+   },
+   "sensible-so": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "created": "string",
+     "type": "string",
+     "status": "string",
+     "completed": "string",
+     "configuration": "string",
+     "configuration_version": "string",
+     "parsed_document": "object",
+     "validations": "array",
+     "file_metadata": "object",
+     "validation_summary": "object",
+     "errors": "array",
+     "classification_summary": "array",
+     "page_count": "integer",
+     "environment": "string",
+     "document_name": "string",
+     "content_type": "string",
+     "coverage": "number",
+     "reviewStatus": "string",
+     "charged": "integer",
+     "postprocessorOutput": "object"
+    },
+    "evidence": [
+     "openapi/_original/sensible-extractions-api-openapi.yml#POST /extract/{document_type}"
+    ]
+   },
+   "shveik": {
+    "segments": [
+     "screenshot",
+     "fetch"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "colorScheme": "string",
+     "delayMs": "integer",
+     "device": "string",
+     "format": "string",
+     "fullPage": "boolean",
+     "height": "integer",
+     "selector": "string",
+     "url": "string",
+     "waitForSelector": "string",
+     "width": "integer",
+     "body": "string",
+     "country": "string",
+     "headers": "object",
+     "max_mb": "integer",
+     "method": "string"
+    },
+    "evidence": [
+     "openapi/_original/agdata-openapi.json#POST /mpp/screenshot",
+     "openapi/_original/agdata-openapi.json#POST /x402/screenshot",
+     "openapi/_original/agproxy-openapi.json#POST /mpp/fetch",
+     "openapi/_original/agproxy-openapi.json#POST /x402/fetch",
+     "openapi/_original/shveik-agdata-openapi.yml#POST /mpp/screenshot",
+     "openapi/_original/shveik-agdata-openapi.yml#POST /x402/screenshot",
+     "openapi/_original/shveik-agproxy-openapi.yml#POST /mpp/fetch",
+     "openapi/_original/shveik-agproxy-openapi.yml#POST /x402/fetch"
+    ]
+   },
+   "snapapi": {
+    "segments": [
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "width": "integer",
+     "height": "integer",
+     "full_page": "boolean",
+     "format": "string"
+    },
+    "evidence": [
+     "openapi/_original/snapapi-openapi.json#POST /api/screenshot"
+    ]
+   },
+   "snapapi-pics": {
+    "segments": [
+     "screenshot",
+     "extract",
+     "scrape"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "cached": "boolean",
+     "data": "string",
+     "format": "string",
+     "width": "integer",
+     "height": "integer",
+     "fileSize": "integer",
+     "took": "integer",
+     "metadata": "object",
+     "storage": "object",
+     "url": "string",
+     "html": "string",
+     "markdown": "string",
+     "quality": "integer",
+     "device": "string",
+     "deviceScaleFactor": "number",
+     "isMobile": "boolean",
+     "hasTouch": "boolean",
+     "isLandscape": "boolean",
+     "fullPage": "boolean",
+     "fullPageScrollDelay": "integer",
+     "fullPageMaxHeight": "integer",
+     "selector": "string",
+     "clipX": "integer",
+     "clipY": "integer",
+     "clipWidth": "integer",
+     "clipHeight": "integer",
+     "delay": "integer",
+     "timeout": "integer",
+     "waitUntil": "string",
+     "waitForSelector": "string",
+     "darkMode": "boolean",
+     "reducedMotion": "boolean",
+     "css": "string",
+     "javascript": "string",
+     "hideSelectors": "array",
+     "clickSelector": "string",
+     "clickDelay": "integer",
+     "blockAds": "boolean",
+     "blockTrackers": "boolean",
+     "blockCookieBanners": "boolean",
+     "blockChatWidgets": "boolean",
+     "blockResources": "array",
+     "userAgent": "string",
+     "extraHeaders": "object",
+     "cookies": "array",
+     "httpAuth": "object",
+     "proxy": "object",
+     "geolocation": "object",
+     "timezone": "string",
+     "locale": "string",
+     "pdfOptions": "object",
+     "thumbnail": "object",
+     "failOnHttpError": "boolean",
+     "failIfContentMissing": "array",
+     "failIfContentContains": "array",
+     "cache": "boolean",
+     "cacheTtl": "integer",
+     "responseType": "string",
+     "includeMetadata": "boolean",
+     "extractMetadata": "object",
+     "async": "boolean",
+     "webhookUrl": "string",
+     "webhookHeaders": "object",
+     "urls": "array",
+     "type": "string",
+     "responseTime": "integer",
+     "waitFor": "string",
+     "includeImages": "boolean",
+     "maxLength": "integer",
+     "cleanOutput": "boolean",
+     "page": "integer",
+     "pages": "integer",
+     "waitMs": "integer",
+     "premiumProxy": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/snapapi-pics-openapi.json#GET /v1/extract",
+     "openapi/_original/snapapi-pics-openapi.json#GET /v1/scrape",
+     "openapi/_original/snapapi-pics-openapi.json#GET /v1/screenshot",
+     "openapi/_original/snapapi-pics-openapi.json#POST /v1/extract",
+     "openapi/_original/snapapi-pics-openapi.json#POST /v1/scrape",
+     "openapi/_original/snapapi-pics-openapi.json#POST /v1/screenshot",
+     "openapi/_original/snapapi-pics-openapi.json#POST /v1/screenshot/batch"
+    ]
+   },
+   "social-fetch": {
+    "segments": [
+     "content",
+     "markdown",
+     "html",
+     "screenshot",
+     "extract"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "lookupStatus": "string",
+     "lang": "string",
+     "title": "string",
+     "format": "string",
+     "section": "integer",
+     "pageId": "integer",
+     "revisionId": "integer",
+     "displayTitle": "string",
+     "content": "object",
+     "license": "object",
+     "latest": "object",
+     "redirectTarget": "string",
+     "redirectedFrom": "string",
+     "sections": "array",
+     "categories": "array",
+     "languageLinks": "array",
+     "templates": "array",
+     "images": "array",
+     "externalLinks": "array",
+     "interwikiLinks": "array",
+     "links": "array",
+     "properties": "object",
+     "parseWarnings": "array",
+     "redirects": "array",
+     "empty": "boolean",
+     "proxy": "string",
+     "budgetExceeded": "boolean",
+     "bytesTransferred": "integer",
+     "url": "string",
+     "status": "integer",
+     "markdown": "object",
+     "metadata": "object",
+     "media": "object",
+     "html": "string",
+     "finalUrl": "string",
+     "artifact": "object",
+     "base64": "string",
+     "extracted": "array",
+     "schema": "object",
+     "scanFullPage": "boolean",
+     "waitFor": "string",
+     "maxCredits": "integer"
+    },
+    "evidence": [
+     "openapi/_original/social-fetch-openapi.json#GET /v1/hugging-face/papers/{arxivId}/content",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/web/html",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/web/markdown",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/web/screenshot",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/wikipedia/pages/{title}/content",
+     "openapi/_original/social-fetch-openapi.json#POST /v1/web/extract"
+    ]
+   },
+   "socialcrawl": {
+    "segments": [
+     "extract",
+     "scrape"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": "object",
+     "credits_used": "integer",
+     "credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "request_id": "string",
+     "cached": "boolean",
+     "idempotent_replay": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/socialcrawl-openapi-slim.json#GET /tavily/extract",
+     "openapi/_original/socialcrawl-openapi-slim.json#GET /web/extract",
+     "openapi/_original/socialcrawl-openapi-slim.json#GET /web/scrape"
+    ]
+   },
+   "spider-cloud": {
+    "segments": [
+     "scrape",
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "status": "integer",
+     "content": "string",
+     "metadata": "object",
+     "return_format": "string",
+     "chrome": "boolean",
+     "proxy_enabled": "boolean",
+     "stealth": "boolean",
+     "image_base64": "string",
+     "image_url": "string",
+     "full_page": "boolean",
+     "viewport_width": "integer",
+     "viewport_height": "integer",
+     "format": "string"
+    },
+    "evidence": [
+     "openapi/_original/spider-cloud-openapi.yml#POST /scrape",
+     "openapi/_original/spider-cloud-openapi.yml#POST /screenshot"
+    ]
+   },
+   "steel-dev": {
+    "segments": [
+     "scrape",
+     "screenshot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "content": "object",
+     "metadata": "object",
+     "links": "array",
+     "screenshot": "string",
+     "pdf": "string",
+     "format": "array",
+     "removeBase64Images": "boolean",
+     "proxyUrl": "string",
+     "delay": "number",
+     "fullPage": "boolean",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/steel-dev-openapi.yml#POST /scrape",
+     "openapi/_original/steel-dev-openapi.yml#POST /screenshot",
+     "openapi/_original/steel-dev-openapi.yml#POST /sessions/scrape",
+     "openapi/_original/steel-dev-openapi.yml#POST /sessions/screenshot"
+    ]
+   },
+   "structify": {
+    "segments": [
+     "scrape"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "job_id": "string",
+     "dataset_name": "string",
+     "extraction_criteria": "array",
+     "node_id": null,
+     "seeded_kg": null,
+     "url": "string",
+     "use_proxy": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/structify-openapi-original.json#POST /scrape"
+    ]
+   },
+   "tensorlake": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "parse_id": "string",
+     "status": "string",
+     "file_id": "string",
+     "file_url": "string",
+     "json_schema": "object",
+     "page_range": "string"
+    },
+    "evidence": [
+     "openapi/_original/tensorlake-openapi.yml#POST /documents/v2/extract"
+    ]
+   },
+   "the-hog": {
+    "segments": [
+     "scrape"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "text": "string",
+     "statusCode": "number",
+     "markdown": "string",
+     "html": "string",
+     "links": "array",
+     "metadata": "object",
+     "json": "object",
+     "renderJs": "boolean",
+     "formats": "array",
+     "jsonSchema": "object",
+     "instructions": "string",
+     "maxAgeMs": "number",
+     "maxAgeDays": "number"
+    },
+    "evidence": [
+     "openapi/_original/the-hog-openapi.json#POST /api/v1/platform/scrapers/web/scrape",
+     "openapi/_original/the-hog-openapi.json#POST /api/v1/platform/scrapers/web/scrape/batch"
+    ]
+   },
+   "webcrawlerapi-com": {
+    "segments": [
+     "scrape",
+     "markdown"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "clean_selectors": "string",
+     "main_content_only": "boolean",
+     "max_age": "integer",
+     "output_format": "string",
+     "output_formats": "array",
+     "prompt": "string",
+     "respect_robots_txt": "boolean",
+     "response_schema": "object",
+     "url": "string",
+     "cleaned_content": "string",
+     "links": "array",
+     "markdown": "string",
+     "page_status_code": "integer",
+     "page_title": "string",
+     "raw_content": "string",
+     "status": "string",
+     "structured_data": null,
+     "success": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/webcrawlerapi-com-openapi.yml#GET /v1/job/{id}/markdown",
+     "openapi/_original/webcrawlerapi-com-openapi.yml#GET /v2/scrape/{id}",
+     "openapi/_original/webcrawlerapi-com-openapi.yml#POST /v2/scrape",
+     "openapi/_original/webcrawlerapi-com-swagger.json#GET /v1/job/{id}/markdown",
+     "openapi/_original/webcrawlerapi-com-swagger.json#GET /v2/scrape/{id}",
+     "openapi/_original/webcrawlerapi-com-swagger.json#POST /v2/scrape"
+    ]
+   },
+   "webscraping-ai": {
+    "segments": [
+     "html"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/webscraping-ai-openapi.yml#GET /html"
+    ]
+   },
+   "zyte": {
+    "segments": [
+     "extract"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "statusCode": "integer",
+     "httpResponseBody": "string",
+     "httpResponseHeaders": "array",
+     "browserHtml": "string",
+     "session": "object",
+     "screenshot": "string",
+     "article": null,
+     "articleList": null,
+     "articleNavigation": null,
+     "forumThread": null,
+     "jobPosting": null,
+     "jobPostingNavigation": null,
+     "pageContent": null,
+     "product": null,
+     "productList": null,
+     "productNavigation": null,
+     "customAttributes": "object",
+     "echoData": "object",
+     "jobId": "string",
+     "actions": "array",
+     "responseCookies": "array",
+     "networkCapture": "array",
+     "serp": "object",
+     "requestHeaders": "object",
+     "tags": "object",
+     "ipType": "string",
+     "httpRequestMethod": "string",
+     "httpRequestBody": "string",
+     "httpRequestText": "string",
+     "customHttpRequestHeaders": "array",
+     "screenshotOptions": "object",
+     "extractFrom": "string",
+     "articleOptions": "object",
+     "articleListOptions": "object",
+     "articleNavigationOptions": "object",
+     "forumThreadOptions": "object",
+     "jobPostingOptions": "object",
+     "jobPostingNavigationOptions": "object",
+     "pageContentOptions": "object",
+     "productOptions": "object",
+     "productListOptions": "object",
+     "productNavigationOptions": "object",
+     "customAttributesOptions": "object",
+     "geolocation": "string",
+     "javascript": "boolean",
+     "viewport": "object",
+     "followRedirect": "boolean",
+     "verifyCertificate": "boolean",
+     "sessionContext": "array",
+     "sessionContextParameters": "object",
+     "device": "string",
+     "cookieManagement": null,
+     "requestCookies": "array",
+     "serpOptions": "object",
+     "includeIframes": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/zyte-zyte-api-openapi.yaml#POST /extract"
+    ]
+   }
+  },
+  "crawl": {
+   "browserless": {
+    "segments": [
+     "crawl",
+     "map"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "search": "string",
+     "limit": "number",
+     "timeout": "number",
+     "sitemap": "string",
+     "includeSubdomains": "boolean",
+     "ignoreQueryParameters": "boolean",
+     "location": "object",
+     "id": "string",
+     "status": "string",
+     "total": "number",
+     "completed": "number",
+     "createdAt": "string",
+     "completedAt": "string",
+     "success": "boolean",
+     "maxDepth": "number",
+     "maxRetries": "number",
+     "allowExternalLinks": "boolean",
+     "allowSubdomains": "boolean",
+     "includePaths": "array",
+     "excludePaths": "array",
+     "delay": "number",
+     "scrapeOptions": "object",
+     "webhook": "object"
+    },
+    "evidence": [
+     "openapi/_original/browserless-openapi.yml#GET /crawl",
+     "openapi/_original/browserless-openapi.yml#POST /crawl",
+     "openapi/_original/browserless-openapi.yml#POST /map"
+    ]
+   },
+   "contextdev": {
+    "segments": [
+     "crawl"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "markdown": "string",
+     "metadata": null,
+     "url": "string",
+     "maxPages": "integer",
+     "maxDepth": "integer",
+     "urlRegex": "string",
+     "excludeUrlRegex": "string",
+     "includeLinks": "boolean",
+     "includeImages": "boolean",
+     "shortenBase64Images": "boolean",
+     "useMainContentOnly": "boolean",
+     "followSubdomains": "boolean",
+     "pdf": "object",
+     "includeFrames": "boolean",
+     "includeSelectors": [
+      "array",
+      "null"
+     ],
+     "excludeSelectors": [
+      "array",
+      "null"
+     ],
+     "maxAgeMs": [
+      "integer",
+      "null"
+     ],
+     "waitForMs": [
+      "integer",
+      "null"
+     ],
+     "settleAnimations": "boolean",
+     "stopAfterMs": "integer",
+     "timeoutOpts": "object",
+     "country": "string",
+     "zdr": "string",
+     "tags": "array"
+    },
+    "evidence": [
+     "openapi/_original/contextdev-openapi.json#POST /web/crawl"
+    ]
+   },
+   "diffbot": {
+    "segments": [
+     "crawl"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "jobStatus": "object",
+     "maxHops": "integer",
+     "downloadJson": "string",
+     "urlProcessPattern": "string",
+     "jobCompletionTimeUTC": "integer",
+     "maxRounds": "integer",
+     "type": "string",
+     "pageCrawlSuccessesThisRound": "integer",
+     "urlCrawlRegEx": "string",
+     "pageProcessPattern": "string",
+     "apiUrl": "string",
+     "useCanonical": "integer",
+     "jobCreationTimeUTC": "integer",
+     "repeat": "integer",
+     "downloadUrls": "string",
+     "obeyRobots": "integer",
+     "roundsCompleted": "integer",
+     "pageCrawlAttempts": "integer",
+     "notifyWebhook": "string",
+     "pageProcessSuccessesThisRound": "integer",
+     "customHeaders": "object",
+     "objectsFound": "integer",
+     "roundStartTime": "integer",
+     "urlCrawlPattern": "string",
+     "seedRecrawlFrequency": "integer",
+     "urlProcessRegEx": "string",
+     "pageProcessSuccesses": "integer",
+     "urlsHarvested": "integer",
+     "crawlDelay": "number",
+     "currentTime": "integer",
+     "useProxies": "integer",
+     "sentJobDoneNotification": "integer",
+     "currentTimeUTC": "integer",
+     "name": "string",
+     "notifyEmail": "string",
+     "pageCrawlSuccesses": "integer",
+     "pageProcessAttempts": "integer",
+     "maxToProcessPerSubdomain": "integer",
+     "onlyProcessIfNew": "integer",
+     "restrictDomain": "integer",
+     "maxToCrawlPerSubdomain": "integer",
+     "maxToProcess": "integer",
+     "seeds": "string",
+     "maxToCrawl": "integer",
+     "restrictSubdomain": "integer"
+    },
+    "evidence": [
+     "openapi/_original/diffbot-crawl-openapi.json#GET /crawl",
+     "openapi/_original/diffbot-crawl-openapi.json#POST /crawl",
+     "openapi/_original/diffbot-openapi.yml#GET /v3/crawl"
+    ]
+   },
+   "firecrawl": {
+    "segments": [
+     "crawl",
+     "map"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "total": "integer",
+     "completed": "integer",
+     "creditsUsed": "integer",
+     "expiresAt": "string",
+     "next": "string",
+     "data": "array",
+     "success": "boolean",
+     "id": "string",
+     "url": "string",
+     "prompt": "string",
+     "excludePaths": "array",
+     "includePaths": "array",
+     "maxDiscoveryDepth": "integer",
+     "sitemap": "string",
+     "ignoreQueryParameters": "boolean",
+     "regexOnFullURL": "boolean",
+     "limit": "integer",
+     "crawlEntireDomain": "boolean",
+     "allowExternalLinks": "boolean",
+     "allowSubdomains": "boolean",
+     "ignoreRobotsTxt": "boolean",
+     "robotsUserAgent": "string",
+     "delay": "number",
+     "maxConcurrency": "integer",
+     "webhook": "object",
+     "scrapeOptions": "object",
+     "zeroDataRetention": "boolean",
+     "title": "string",
+     "description": "string",
+     "search": "string",
+     "includeSubdomains": "boolean",
+     "ignoreCache": "boolean",
+     "timeout": "integer",
+     "location": "object"
+    },
+    "evidence": [
+     "openapi/_original/firecrawl-openapi-original.json#DELETE /crawl/{id}",
+     "openapi/_original/firecrawl-openapi-original.json#GET /crawl/{id}",
+     "openapi/_original/firecrawl-openapi-original.json#POST /crawl",
+     "openapi/_original/firecrawl-openapi-original.json#POST /map"
+    ]
+   },
+   "hyperbrowser": {
+    "segments": [
+     "crawl"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "jobId": "string",
+     "url": "string",
+     "maxPages": "integer",
+     "followLinks": "boolean",
+     "ignoreSitemap": "boolean",
+     "excludePatterns": "array",
+     "includePatterns": "array",
+     "sessionOptions": "object",
+     "scrapeOptions": "object",
+     "status": "string",
+     "error": "string",
+     "totalCrawledPages": "integer",
+     "totalPageBatches": "integer",
+     "currentPageBatch": "integer",
+     "batchSize": "integer",
+     "data": "array",
+     "stealth": "string",
+     "outputs": "object",
+     "browser": "object",
+     "navigation": "object",
+     "cache": "object",
+     "crawlOptions": "object",
+     "totalPages": "integer"
+    },
+    "evidence": [
+     "openapi/_original/hyperbrowser-openapi.json#GET /api/crawl/{id}",
+     "openapi/_original/hyperbrowser-openapi.json#GET /api/web/crawl/{id}",
+     "openapi/_original/hyperbrowser-openapi.json#POST /api/crawl",
+     "openapi/_original/hyperbrowser-openapi.json#POST /api/web/crawl"
+    ]
+   },
+   "mercury-hq-com": {
+    "segments": [
+     "sitemap"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "url": "string",
+     "status": "integer",
+     "data": "object",
+     "text": "string",
+     "contentType": "string",
+     "fetchedAt": "string",
+     "error": "string"
+    },
+    "evidence": [
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.json#GET /buy/sitemap",
+     "openapi/_original/mercury-hq-com-x402-storefront-openapi.yml#GET /buy/sitemap"
+    ]
+   },
+   "nimbleway": {
+    "segments": [
+     "crawl",
+     "map"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "title": "string",
+     "description": "string",
+     "sitemap": "string",
+     "country": "string",
+     "locale": "string",
+     "domain_filter": "string",
+     "limit": "integer",
+     "crawl_id": "string",
+     "name": "string",
+     "account_name": "string",
+     "status": "string",
+     "total": "integer",
+     "completed": "integer",
+     "failed": "integer",
+     "pending": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "completed_at": "string",
+     "crawl_options": "object",
+     "extract_options": "object",
+     "tasks": "array",
+     "crawl_entire_domain": "boolean",
+     "max_discovery_depth": "integer",
+     "exclude_paths": "array",
+     "include_paths": "array",
+     "ignore_query_parameters": "boolean",
+     "allow_external_links": "boolean",
+     "allow_subdomains": "boolean",
+     "callback": null
+    },
+    "evidence": [
+     "openapi/_original/nimbleway-openapi.json#DELETE /v1/crawl/{id}",
+     "openapi/_original/nimbleway-openapi.json#GET /v1/crawl",
+     "openapi/_original/nimbleway-openapi.json#GET /v1/crawl/{id}",
+     "openapi/_original/nimbleway-openapi.json#POST /v1/crawl",
+     "openapi/_original/nimbleway-openapi.json#POST /v1/map"
+    ]
+   },
+   "pagesnap": {
+    "segments": [
+     "crawl"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "finalUrl": "string",
+     "title": "string",
+     "depth": "integer",
+     "markdown": "string",
+     "limit": "integer",
+     "max_depth": "integer",
+     "same_origin": "boolean",
+     "include": null,
+     "exclude": null,
+     "use_sitemap": "boolean",
+     "format": "string"
+    },
+    "evidence": [
+     "openapi/_original/pagesnap-openapi.json#POST /v1/crawl",
+     "openapi/_original/pagesnap-openapi.json#POST /x402/v1/crawl"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "map",
+     "crawlers",
+     "crawl"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "url": "string",
+     "path": "string",
+     "bots": "string",
+     "type": "string",
+     "value": "string",
+     "limit": "string",
+     "search": "string",
+     "include_subdomains": "string",
+     "max_pages": "string",
+     "max_depth": "string",
+     "same_domain_only": "string",
+     "include_patterns": "string",
+     "exclude_patterns": "string",
+     "formats": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /geo-intel/v1/crawlers",
+     "openapi/_original/reefapi-openapi.json#POST /lei/v1/map",
+     "openapi/_original/reefapi-openapi.json#POST /web-extract/v1/crawl",
+     "openapi/_original/reefapi-openapi.json#POST /web-extract/v1/map"
+    ]
+   },
+   "s1-dev": {
+    "segments": [
+     "crawl",
+     "sitemap"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "link": "string",
+     "content": "string",
+     "metadata": "object",
+     "url": "string",
+     "enableFallback": "boolean",
+     "links": "array",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/s1-dev-openapi.yml#POST /crawl",
+     "openapi/_original/s1-dev-openapi.yml#POST /sitemap",
+     "openapi/_original/search1api-openapi.json#POST /crawl",
+     "openapi/_original/search1api-openapi.json#POST /sitemap"
+    ]
+   },
+   "social-fetch": {
+    "segments": [
+     "sitemap",
+     "crawl"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "lookupStatus": "string",
+     "store": "string",
+     "type": "string",
+     "sitemaps": "array",
+     "entries": "array",
+     "truncated": "boolean",
+     "page": "object",
+     "url": "string",
+     "path": "string",
+     "kind": "string",
+     "date": "string",
+     "lastModified": "string",
+     "status": "integer",
+     "success": "boolean",
+     "markdown": "object",
+     "html": "string",
+     "metadata": "object",
+     "errorMessage": "string",
+     "links": "object",
+     "media": "object"
+    },
+    "evidence": [
+     "openapi/_original/social-fetch-openapi.json#GET /v1/medium/sitemap",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/shopify/store/sitemap",
+     "openapi/_original/social-fetch-openapi.json#GET /v1/web/crawl"
+    ]
+   },
+   "socialcrawl": {
+    "segments": [
+     "map",
+     "crawl"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": "object",
+     "credits_used": "integer",
+     "credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "request_id": "string",
+     "cached": "boolean",
+     "idempotent_replay": "boolean",
+     "pagination": "object",
+     "url": "string",
+     "limit": "integer",
+     "max_depth": "integer",
+     "allow_backward_links": "boolean",
+     "allow_external_links": "boolean",
+     "include_paths": "string",
+     "exclude_paths": "string",
+     "webhook_url": "string",
+     "formats": "string"
+    },
+    "evidence": [
+     "openapi/_original/socialcrawl-openapi-slim.json#GET /tavily/crawl",
+     "openapi/_original/socialcrawl-openapi-slim.json#GET /tavily/map",
+     "openapi/_original/socialcrawl-openapi-slim.json#GET /web/map",
+     "openapi/_original/socialcrawl-openapi-slim.json#POST /web/crawl"
+    ]
+   },
+   "spider-cloud": {
+    "segments": [
+     "crawl"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "status": "integer",
+     "content": "string",
+     "metadata": "object",
+     "limit": "integer",
+     "depth": "integer",
+     "return_format": "string",
+     "respect_robots_txt": "boolean",
+     "proxy_enabled": "boolean",
+     "stealth": "boolean",
+     "chrome": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/spider-cloud-openapi.yml#POST /crawl"
+    ]
+   },
+   "the-hog": {
+    "segments": [
+     "crawl"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "limit": "number",
+     "maxPages": "number",
+     "maxDepth": "number",
+     "sameDomainOnly": "boolean",
+     "instructions": "string"
+    },
+    "evidence": [
+     "openapi/_original/the-hog-openapi.json#POST /api/v1/platform/scrapers/web/crawl"
+    ]
+   },
+   "webcrawlerapi-com": {
+    "segments": [
+     "crawl"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "blacklist_regexp": "string",
+     "items_limit": "integer",
+     "keep_query_params": "boolean",
+     "main_content_only": "boolean",
+     "max_age": "integer",
+     "max_depth": "integer",
+     "output_formats": "array",
+     "respect_robots_txt": "boolean",
+     "scrape_type": "string",
+     "url": "string",
+     "webhook_url": "string",
+     "whitelist_regexp": "string"
+    },
+    "evidence": [
+     "openapi/_original/webcrawlerapi-com-openapi.yml#POST /v1/crawl",
+     "openapi/_original/webcrawlerapi-com-swagger.json#POST /v1/crawl"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "73-strings",
+    "abbyy",
+    "abstract-api",
+    "adscrawl",
+    "agentql",
+    "airtop",
+    "amazon-scraper-api",
+    "anchorbrowser",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "automation-preflight-api",
+    "bem",
+    "botify",
+    "bright-data",
+    "brightdata",
+    "browser-use",
+    "browserbase",
+    "browserless",
+    "canoe-intelligence",
+    "chocodata",
+    "claix-dev",
+    "cloro-dev",
+    "coasty",
+    "contextdev",
+    "cracked",
+    "crawl4ai",
+    "diffbot",
+    "docparser",
+    "docsumo",
+    "doctly-ai",
+    "eigenpal",
+    "envoy-proxy",
+    "firecrawl",
+    "frostbyte",
+    "geekflare",
+    "getemboss-ai",
+    "gonitro",
+    "google-cloud-document-ai",
+    "h-company",
+    "hyperbrowser",
+    "import-io",
+    "instabase",
+    "interfaze",
+    "kernel",
+    "kernel-so",
+    "konbiniapi",
+    "landingai",
+    "litescrape",
+    "mcp360",
+    "mercury-hq-com",
+    "mrscraper",
+    "nace-ai",
+    "nanonets",
+    "ngrok",
+    "nimbleway",
+    "nitro-software",
+    "notte",
+    "octoparse",
+    "openserp",
+    "oxylabs",
+    "pagesnap",
+    "parseforme",
+    "parsehub",
+    "parseur",
+    "parsio",
+    "reducto",
+    "reducto-ai",
+    "reefapi",
+    "runautomat",
+    "s1-dev",
+    "schemaextract",
+    "scraper-api",
+    "scrapfly",
+    "scrapingant",
+    "scrapingbee",
+    "scrapybara",
+    "screenshotapi-to",
+    "sensible-so",
+    "serper",
+    "serpwow",
+    "shveik",
+    "smartproxy",
+    "snapapi",
+    "snapapi-pics",
+    "soax",
+    "social-fetch",
+    "socialcrawl",
+    "sorsa",
+    "spider-cloud",
+    "steel-dev",
+    "structify",
+    "tensorlake",
+    "testerarmy",
+    "the-hog",
+    "thordata",
+    "tinyfish",
+    "trueproxies",
+    "valueserp",
+    "warppay402-com",
+    "webcrawlerapi-com",
+    "webscraping-ai",
+    "xceptor",
+    "xquik-api",
+    "yutori",
+    "zenscrape",
+    "zenserp",
+    "zyte"
+   ],
+   "kebab-case": [
+    "73-strings",
+    "abbyy",
+    "adscrawl",
+    "agentql",
+    "airtop",
+    "anchorbrowser",
+    "apifreaks-api-hub-for-developers",
+    "automation-preflight-api",
+    "bem",
+    "botify",
+    "bright-data",
+    "browser-use",
+    "browserless",
+    "canoe-intelligence",
+    "claix-dev",
+    "contextdev",
+    "docsumo",
+    "eigenpal",
+    "firecrawl",
+    "frostbyte",
+    "getemboss-ai",
+    "gonitro",
+    "h-company",
+    "hyperbrowser",
+    "instabase",
+    "kernel",
+    "kernel-so",
+    "landingai",
+    "litescrape",
+    "mcp360",
+    "mrscraper",
+    "nimbleway",
+    "nitro-software",
+    "oxylabs",
+    "pagesnap",
+    "parseforme",
+    "parsio",
+    "reefapi",
+    "scrapybara",
+    "shveik",
+    "smartproxy",
+    "snapapi-pics",
+    "soax",
+    "social-fetch",
+    "socialcrawl",
+    "sorsa",
+    "spider-cloud",
+    "steel-dev",
+    "structify",
+    "testerarmy",
+    "the-hog",
+    "thordata",
+    "tinyfish",
+    "trueproxies",
+    "warppay402-com",
+    "webscraping-ai",
+    "xquik-api",
+    "yutori"
+   ],
+   "snake_case": [
+    "abstract-api",
+    "botify",
+    "bright-data",
+    "brightdata",
+    "canoe-intelligence",
+    "envoy-proxy",
+    "h-company",
+    "kernel",
+    "kernel-so",
+    "mcp360",
+    "nace-ai",
+    "ngrok",
+    "notte",
+    "parsehub",
+    "parseur",
+    "parsio",
+    "reducto",
+    "reducto-ai",
+    "reefapi",
+    "sensible-so",
+    "serpwow",
+    "socialcrawl",
+    "spider-cloud",
+    "structify",
+    "warppay402-com",
+    "zenserp"
+   ],
+   "other": [
+    "anyapi",
+    "browserless",
+    "canoe-intelligence",
+    "envoy-proxy",
+    "frostbyte",
+    "getemboss-ai",
+    "gonitro",
+    "google-cloud-document-ai",
+    "nitro-software",
+    "octoparse",
+    "openserp",
+    "pagesnap",
+    "reefapi",
+    "valueserp"
+   ],
+   "camelCase": [
+    "73-strings",
+    "abbyy",
+    "anchorbrowser",
+    "google-cloud-document-ai",
+    "octoparse",
+    "parsio",
+    "reefapi"
+   ],
+   "PascalCase": [
+    "canoe-intelligence",
+    "nanonets"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "abbyy",
+    "abstract-api",
+    "adscrawl",
+    "agentql",
+    "airtop",
+    "amazon-scraper-api",
+    "anchorbrowser",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "bem",
+    "botify",
+    "bright-data",
+    "brightdata",
+    "browser-use",
+    "browserbase",
+    "browserless",
+    "canoe-intelligence",
+    "chocodata",
+    "cloro-dev",
+    "coasty",
+    "contextdev",
+    "cracked",
+    "diffbot",
+    "docparser",
+    "docsumo",
+    "doctly-ai",
+    "eigenpal",
+    "envoy-proxy",
+    "firecrawl",
+    "getemboss-ai",
+    "h-company",
+    "hyperbrowser",
+    "instabase",
+    "kernel",
+    "kernel-so",
+    "konbiniapi",
+    "landingai",
+    "litescrape",
+    "mcp360",
+    "mercury-hq-com",
+    "mrscraper",
+    "nace-ai",
+    "ngrok",
+    "nimbleway",
+    "notte",
+    "octoparse",
+    "openserp",
+    "oxylabs",
+    "pagesnap",
+    "parsehub",
+    "parseur",
+    "parsio",
+    "reducto",
+    "reducto-ai",
+    "s1-dev",
+    "schemaextract",
+    "scraper-api",
+    "scrapfly",
+    "scrapingant",
+    "scrapingbee",
+    "screenshotapi-to",
+    "sensible-so",
+    "serpwow",
+    "shveik",
+    "snapapi-pics",
+    "soax",
+    "social-fetch",
+    "socialcrawl",
+    "sorsa",
+    "spider-cloud",
+    "structify",
+    "tensorlake",
+    "testerarmy",
+    "the-hog",
+    "thordata",
+    "tinyfish",
+    "trueproxies",
+    "valueserp",
+    "webcrawlerapi-com",
+    "webscraping-ai",
+    "xceptor",
+    "xquik-api",
+    "yutori",
+    "zenrows",
+    "zenscrape",
+    "zenserp",
+    "zyte"
+   ],
+   "snake_case": [
+    "abstract-api",
+    "agentql",
+    "amazon-scraper-api",
+    "anchorbrowser",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "botify",
+    "bright-data",
+    "brightdata",
+    "browser-use",
+    "canoe-intelligence",
+    "chocodata",
+    "claix-dev",
+    "coasty",
+    "contextdev",
+    "docparser",
+    "docsumo",
+    "doctly-ai",
+    "eigenpal",
+    "envoy-proxy",
+    "getemboss-ai",
+    "h-company",
+    "instabase",
+    "kernel",
+    "kernel-so",
+    "landingai",
+    "litescrape",
+    "mcp360",
+    "nace-ai",
+    "nanonets",
+    "ngrok",
+    "nimbleway",
+    "notte",
+    "openserp",
+    "pagesnap",
+    "parsehub",
+    "parseur",
+    "parsio",
+    "reducto",
+    "reducto-ai",
+    "schemaextract",
+    "scraper-api",
+    "scrapfly",
+    "scrapingant",
+    "scrapingbee",
+    "sensible-so",
+    "serpwow",
+    "snapapi-pics",
+    "socialcrawl",
+    "sorsa",
+    "structify",
+    "thordata",
+    "tinyfish",
+    "trueproxies",
+    "valueserp",
+    "webcrawlerapi-com",
+    "webscraping-ai",
+    "xceptor",
+    "xquik-api",
+    "yutori",
+    "zenrows",
+    "zenscrape",
+    "zenserp",
+    "zyte"
+   ],
+   "camelCase": [
+    "73-strings",
+    "abbyy",
+    "adscrawl",
+    "airtop",
+    "anchorbrowser",
+    "apifreaks-api-hub-for-developers",
+    "bem",
+    "browser-use",
+    "browserbase",
+    "browserless",
+    "canoe-intelligence",
+    "contextdev",
+    "diffbot",
+    "eigenpal",
+    "firecrawl",
+    "gonitro",
+    "hyperbrowser",
+    "landingai",
+    "litescrape",
+    "mcp360",
+    "mercury-hq-com",
+    "mrscraper",
+    "nitro-software",
+    "octoparse",
+    "screenshotapi-to",
+    "snapapi-pics",
+    "social-fetch",
+    "socialcrawl",
+    "testerarmy",
+    "xquik-api"
+   ],
+   "kebab-case": [
+    "apifreaks-api-hub-for-developers",
+    "instabase",
+    "scrapingant"
+   ],
+   "other": [
+    "apifreaks-api-hub-for-developers",
+    "zenserp"
+   ],
+   "PascalCase": [
+    "abbyy"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "abbyy",
+    "agentql",
+    "airtop",
+    "anchorbrowser",
+    "anyapi",
+    "apifreaks-api-hub-for-developers",
+    "bem",
+    "botify",
+    "browser-use",
+    "browserbase",
+    "browserless",
+    "canoe-intelligence",
+    "coasty",
+    "contextdev",
+    "cracked",
+    "docparser",
+    "docsumo",
+    "doctly-ai",
+    "eigenpal",
+    "firecrawl",
+    "getemboss-ai",
+    "h-company",
+    "hyperbrowser",
+    "instabase",
+    "kernel",
+    "kernel-so",
+    "litescrape",
+    "mercury-hq-com",
+    "nace-ai",
+    "ngrok",
+    "nimbleway",
+    "openserp",
+    "parsehub",
+    "reducto",
+    "reducto-ai",
+    "sensible-so",
+    "shveik",
+    "snapapi-pics",
+    "social-fetch",
+    "socialcrawl",
+    "structify",
+    "tensorlake",
+    "testerarmy",
+    "the-hog",
+    "tinyfish",
+    "trueproxies",
+    "webcrawlerapi-com",
+    "xquik-api"
+   ],
+   "page": [
+    "adscrawl",
+    "agentql",
+    "amazon-scraper-api",
+    "anchorbrowser",
+    "apifreaks-api-hub-for-developers",
+    "bem",
+    "botify",
+    "browser-use",
+    "canoe-intelligence",
+    "chocodata",
+    "contextdev",
+    "getemboss-ai",
+    "h-company",
+    "hyperbrowser",
+    "landingai",
+    "mrscraper",
+    "nimbleway",
+    "notte",
+    "octoparse",
+    "parseur",
+    "parsio",
+    "scrapingbee",
+    "serpwow",
+    "social-fetch",
+    "socialcrawl",
+    "tinyfish",
+    "valueserp",
+    "webcrawlerapi-com",
+    "xceptor",
+    "zyte"
+   ],
+   "cursor": [
+    "bem",
+    "browser-use",
+    "browserbase",
+    "browserless",
+    "coasty",
+    "contextdev",
+    "cracked",
+    "eigenpal",
+    "firecrawl",
+    "kernel",
+    "konbiniapi",
+    "nace-ai",
+    "nimbleway",
+    "reducto",
+    "reducto-ai",
+    "shveik",
+    "social-fetch",
+    "socialcrawl",
+    "tensorlake",
+    "testerarmy",
+    "the-hog",
+    "tinyfish",
+    "trueproxies",
+    "xquik-api",
+    "yutori"
+   ],
+   "offset": [
+    "abbyy",
+    "airtop",
+    "browserbase",
+    "browserless",
+    "docsumo",
+    "eigenpal",
+    "getemboss-ai",
+    "h-company",
+    "instabase",
+    "kernel",
+    "kernel-so",
+    "nimbleway",
+    "octoparse",
+    "parsehub",
+    "snapapi-pics",
+    "social-fetch",
+    "socialcrawl",
+    "structify",
+    "webcrawlerapi-com"
+   ],
+   "page_size": [
+    "73-strings",
+    "adscrawl",
+    "browser-use",
+    "getemboss-ai",
+    "instabase",
+    "landingai",
+    "mrscraper",
+    "notte",
+    "parseur",
+    "webcrawlerapi-com",
+    "xceptor",
+    "xquik-api",
+    "yutori",
+    "zyte"
+   ],
+   "start": [
+    "hyperbrowser",
+    "kernel",
+    "litescrape",
+    "openserp",
+    "social-fetch",
+    "socialcrawl",
+    "structify",
+    "zenserp"
+   ],
+   "after": [
+    "apifreaks-api-hub-for-developers",
+    "browser-use",
+    "coasty",
+    "kernel",
+    "social-fetch",
+    "socialcrawl",
+    "xquik-api"
+   ],
+   "count": [
+    "apifreaks-api-hub-for-developers",
+    "konbiniapi",
+    "litescrape",
+    "social-fetch",
+    "socialcrawl",
+    "xquik-api"
+   ],
+   "size": [
+    "apifreaks-api-hub-for-developers",
+    "botify",
+    "diffbot",
+    "h-company",
+    "mcp360",
+    "octoparse"
+   ],
+   "per_page": [
+    "canoe-intelligence",
+    "nimbleway",
+    "parsio",
+    "socialcrawl"
+   ],
+   "before": [
+    "apifreaks-api-hub-for-developers",
+    "browser-use",
+    "social-fetch"
+   ],
+   "skip": [
+    "browserless",
+    "doctly-ai"
+   ],
+   "max_results": [
+    "contextdev",
+    "socialcrawl"
+   ],
+   "top": [
+    "getemboss-ai",
+    "social-fetch"
+   ],
+   "starting_after": [
+    "bem"
+   ],
+   "page_token": [
+    "kernel"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "adscrawl",
+    "airtop",
+    "anchorbrowser",
+    "anyapi",
+    "bem",
+    "botify",
+    "bright-data",
+    "browserbase",
+    "canoe-intelligence",
+    "chocodata",
+    "coasty",
+    "cracked",
+    "diffbot",
+    "doctly-ai",
+    "eigenpal",
+    "firecrawl",
+    "frostbyte",
+    "getemboss-ai",
+    "google-cloud-document-ai",
+    "h-company",
+    "hyperbrowser",
+    "instabase",
+    "kernel",
+    "kernel-so",
+    "konbiniapi",
+    "mrscraper",
+    "ngrok",
+    "nimbleway",
+    "openserp",
+    "pagesnap",
+    "parseforme",
+    "parseur",
+    "sensible-so",
+    "smartproxy",
+    "snapapi-pics",
+    "social-fetch",
+    "spider-cloud",
+    "structify",
+    "testerarmy",
+    "the-hog",
+    "tinyfish",
+    "trueproxies",
+    "warppay402-com",
+    "webcrawlerapi-com",
+    "xquik-api",
+    "yutori",
+    "zenserp"
+   ],
+   "snake_case": [
+    "anchorbrowser",
+    "bem",
+    "botify",
+    "bright-data",
+    "brightdata",
+    "browser-use",
+    "claix-dev",
+    "coasty",
+    "contextdev",
+    "docsumo",
+    "doctly-ai",
+    "getemboss-ai",
+    "h-company",
+    "instabase",
+    "kernel",
+    "kernel-so",
+    "landingai",
+    "nace-ai",
+    "nanonets",
+    "nimbleway",
+    "notte",
+    "pagesnap",
+    "parsehub",
+    "parseur",
+    "parsio",
+    "reducto",
+    "reducto-ai",
+    "scrapybara",
+    "sensible-so",
+    "soax",
+    "socialcrawl",
+    "sorsa",
+    "structify",
+    "tensorlake",
+    "yutori"
+   ],
+   "camelCase": [
+    "abbyy",
+    "adscrawl",
+    "airtop",
+    "anchorbrowser",
+    "bem",
+    "browserbase",
+    "canoe-intelligence",
+    "cloro-dev",
+    "crawl4ai",
+    "diffbot",
+    "docparser",
+    "eigenpal",
+    "firecrawl",
+    "gonitro",
+    "google-cloud-document-ai",
+    "hyperbrowser",
+    "import-io",
+    "konbiniapi",
+    "nitro-software",
+    "oxylabs",
+    "s1-dev",
+    "smartproxy",
+    "snapapi-pics",
+    "social-fetch",
+    "socialcrawl",
+    "steel-dev",
+    "testerarmy",
+    "tinyfish",
+    "trueproxies",
+    "warppay402-com",
+    "xceptor",
+    "xquik-api"
+   ],
+   "kebab-case": [
+    "instabase",
+    "sensible-so"
+   ],
+   "other": [
+    "getemboss-ai"
+   ]
+  },
+  "property": {
+   "lower": [
+    "adscrawl",
+    "airtop",
+    "anchorbrowser",
+    "apifreaks-api-hub-for-developers",
+    "brightdata",
+    "browserbase",
+    "browserless",
+    "coasty",
+    "contextdev",
+    "diffbot",
+    "firecrawl",
+    "geekflare",
+    "hyperbrowser",
+    "kernel",
+    "kernel-so",
+    "landingai",
+    "mercury-hq-com",
+    "nace-ai",
+    "nimbleway",
+    "notte",
+    "openserp",
+    "pagesnap",
+    "reducto",
+    "reducto-ai",
+    "reefapi",
+    "runautomat",
+    "s1-dev",
+    "schemaextract",
+    "scrapfly",
+    "screenshotapi-to",
+    "sensible-so",
+    "shveik",
+    "snapapi",
+    "snapapi-pics",
+    "social-fetch",
+    "socialcrawl",
+    "spider-cloud",
+    "steel-dev",
+    "structify",
+    "tensorlake",
+    "the-hog",
+    "webcrawlerapi-com",
+    "zyte"
+   ],
+   "snake_case": [
+    "anchorbrowser",
+    "apifreaks-api-hub-for-developers",
+    "bright-data",
+    "coasty",
+    "contextdev",
+    "landingai",
+    "nace-ai",
+    "nimbleway",
+    "notte",
+    "openserp",
+    "pagesnap",
+    "reefapi",
+    "s1-dev",
+    "schemaextract",
+    "scrapfly",
+    "scrapybara",
+    "sensible-so",
+    "shveik",
+    "snapapi",
+    "socialcrawl",
+    "spider-cloud",
+    "structify",
+    "tensorlake",
+    "webcrawlerapi-com"
+   ],
+   "camelCase": [
+    "adscrawl",
+    "airtop",
+    "browserbase",
+    "browserless",
+    "contextdev",
+    "diffbot",
+    "firecrawl",
+    "geekflare",
+    "hyperbrowser",
+    "mercury-hq-com",
+    "pagesnap",
+    "s1-dev",
+    "screenshotapi-to",
+    "sensible-so",
+    "shveik",
+    "snapapi-pics",
+    "social-fetch",
+    "steel-dev",
+    "the-hog",
+    "zyte"
+   ],
+   "other": [
+    "apifreaks-api-hub-for-developers",
+    "nimbleway"
+   ]
+  }
+ }
+}
